@@ -1,0 +1,1289 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Starfall",
+				"abbreviation": "SF",
+				"full": "Starfall",
+				"url": "",
+				"authors": [
+					"ArrowThunder"
+				],
+				"convertedBy": [
+					"ArrowThunder"
+				]
+			}
+		],
+		"dateAdded": 1600813705,
+		"dateLastModified": 1600813705
+	},
+	"monster": [
+		{
+			"name": "Manifestation of Joy",
+			"shortName": "Manifestation",
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"murkspawn",
+					"psyche manifestation"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Neutral Void"
+				}
+			],
+			"ac": [
+				{
+					"special": "the AC of its summoner"
+				}
+			],
+			"hp": {
+				"special": "half the hit point maximum of its summoner"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"psychic"
+					],
+					"note": "(no bonded healing)"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all languages known to its summoner"
+			],
+			"trait": [
+				{
+					"name": "Private Summons",
+					"entries": [
+						"The manifestation has resistance to any damage dealt by any creature except for the summoner. Any other creature that damages the manifestation summons their own manifestation."
+					]
+				},
+				{
+					"name": "Empathic Bond",
+					"entries": [
+						"While the manifestation exists, the summoner is unable to feel joy. The manifestation has full access to the thoughts, feelings, and memories of the summoner. When the manifestation takes damage, the summoner makes a {@dc 14} Wisdom save. On a success, the summoner regains hit points equal to the damage dealt, or half as much on a failed save."
+					]
+				},
+				{
+					"name": "Killjoy",
+					"entries": [
+						"When this manifestation is summoned, its summoner loses hit points equal to half of the summoner's hit point maximum. If this would bring the summoner to 0 hit points, it brings them to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Late Bloomer",
+					"entries": [
+						"The manifestation's recharge abilities start combat expended, and cannot be used the first round of combat."
+					]
+				},
+				{
+					"name": "Smoky Form",
+					"entries": [
+						"The manifestation can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Evoke Shame",
+					"entries": [
+						"The manifestation brings forth a joyful memory for the summoner and attempts to bring the summoner shame. The summoner must make a {@dc 14} Intelligence save or take (summoner's hit die) psychic damage. The manifestation loses hit points equal to half of the psychic damage dealt."
+					]
+				},
+				{
+					"name": "Painful Reintegration {@recharge 5}",
+					"entries": [
+						"The manifestation fuses with the summoner, destroying the manifestation. The summoner must make a {@dc 14} Charisma save. On a success, the summoner regains hit points equal to half the remaining hit points of the manifestation when it was destroyed."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Manifestation of Anger",
+			"shortName": "Manifestation",
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"murkspawn",
+					"psyche manifestation"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Neutral Void"
+				}
+			],
+			"ac": [
+				{
+					"special": "2 + the AC of its summoner"
+				}
+			],
+			"hp": {
+				"special": "half the hit point maximum of its summoner"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"str": "+5",
+				"dex": "+5",
+				"con": "+5",
+				"int": "+5",
+				"wis": "+5",
+				"cha": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"psychic"
+					],
+					"note": "(deals full rebound, half on save)"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all languages known to its summoner"
+			],
+			"trait": [
+				{
+					"name": "Private Summons",
+					"entries": [
+						"The manifestation has resistance to any damage dealt by any creature except for the summoner. Any other creature that damages the manifestation summons their own manifestation."
+					]
+				},
+				{
+					"name": "Empathic Bond",
+					"entries": [
+						"While the manifestation exists, the summoner is unable to feel anger. The manifestation has full access to the thoughts, feelings, and memories of the summoner."
+					]
+				},
+				{
+					"name": "Smoky Form",
+					"entries": [
+						"The manifestation can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Evoke Guilt",
+					"entries": [
+						"The manifestation instills empathy those who have been on the receiving end of the summoner's powers. The summoner must make a {@dc 14} Intelligence save or take (summoner's hit die) psychic damage. The manifestation regains hit points equal to half of the psychic damage dealt."
+					]
+				},
+				{
+					"name": "Wrathful Dagger",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) cold damage, plus 3 ({@damage 1d4 + 1}) force damage, plus 3 ({@damage 1d4 + 1}) psychic damage."
+					]
+				},
+				{
+					"name": "Retributive Flurry {@recharge 5}",
+					"entries": [
+						"The manifestation strikes its summoner up to three times with its wrathful dagger. If any of them hit, the summoner must make a {@dc 14} Charisma saving throw or be {@condition frightened}. The saving throw can be repeated at the end of each of the summoner's turns."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Repression",
+					"entries": [
+						"When the summoner takes an action or a bonus action, the manifestation can cause them to make a {@dc 14} Wisdom saving throw. On a failed save, the action or bonus action is lost."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"C",
+				"O",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Manifestation of Trust",
+			"shortName": "Manifestation",
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"murkspawn",
+					"psyche manifestation"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Neutral Void"
+				}
+			],
+			"ac": [
+				{
+					"special": "the AC of its summoner"
+				}
+			],
+			"hp": {
+				"special": "half the hit point maximum of its summoner"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"psychic"
+					],
+					"note": "(deals full rebound, half on save)"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all languages known to its summoner"
+			],
+			"trait": [
+				{
+					"name": "Private Summons",
+					"entries": [
+						"The manifestation has resistance to any damage dealt by any creature except for the summoner. Any other creature that damages the manifestation summons their own manifestation."
+					]
+				},
+				{
+					"name": "Empathic Bond",
+					"entries": [
+						"While the manifestation exists, the summoner is unable to feel trust or be {@condition charmed}. The manifestation has full access to the thoughts, feelings, and memories of the summoner. When the manifestation takes damage, the summoner makes a {@dc 14} Wisdom save. On a failed save, the summoner takes psychic damage equal to half the damage dealt to the manifestation."
+					]
+				},
+				{
+					"name": "Late Bloomer",
+					"entries": [
+						"The manifestation's recharge abilities start combat expended, and cannot be used the first round of combat."
+					]
+				},
+				{
+					"name": "Aura of Isolation",
+					"entries": [
+						"Other creatures within 30 feet of the manifestation cannot readily help one another. When such a creature attempts the help action, or to cast a spell targeting anyone other than itself, the manifestation, or the manifestation's allies, the creature must make a {@dc 14} Charisma saving throw. On a failed save, the attempt fails, the action and any spell points used being lost."
+					]
+				},
+				{
+					"name": "Smoky Form",
+					"entries": [
+						"The manifestation can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Evoke Doubt",
+					"entries": [
+						"The manifestation nurtures seeds of doubts in the summoner. The summoner must make a {@dc 14} Intelligence save or take (summoner's hit die) psychic damage. The manifestation gains hit points equal to half of the psychic damage dealt."
+					]
+				},
+				{
+					"name": "Painful Reintegration {@recharge 6}",
+					"entries": [
+						"The manifestation fuses with the summoner, destroying the manifestation. The summoner must make a {@dc 14} Charisma save. The summoner takes psychic damage equal to the remaining hit points of the manifestation when it was destroyed, or half as much on a successful save."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Manifestation of Fear",
+			"shortName": "Manifestation",
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"murkspawn",
+					"psyche manifestation"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Neutral Void"
+				}
+			],
+			"ac": [
+				{
+					"special": "the AC of its summoner"
+				}
+			],
+			"hp": {
+				"special": "half the hit point maximum of its summoner"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"psychic"
+					],
+					"note": "(deals full rebound, half on save)"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all languages known to its summoner"
+			],
+			"trait": [
+				{
+					"name": "Private Summons",
+					"entries": [
+						"The manifestation has resistance to any damage dealt by any creature except for the summoner. Any other creature that damages the manifestation summons their own manifestation."
+					]
+				},
+				{
+					"name": "Empathic Bond",
+					"entries": [
+						"While the manifestation exists, the summoner is unable to feel fear or be {@condition frightened}. The manifestation has full access to the thoughts, feelings, and memories of the summoner. When the manifestation takes damage, the summoner makes a {@dc 14} Wisdom save. On a failed save, the summoner takes psychic damage equal to half the damage dealt to the manifestation."
+					]
+				},
+				{
+					"name": "Late Bloomer",
+					"entries": [
+						"The manifestation's recharge abilities start combat expended, and cannot be used the first round of combat."
+					]
+				},
+				{
+					"name": "Despicable Cowardice",
+					"entries": [
+						"Attacks made against the manifestation have advantage."
+					]
+				},
+				{
+					"name": "Smoky Form",
+					"entries": [
+						"The manifestation can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Painful Reintegration {@recharge 5}",
+					"entries": [
+						"The manifestation fuses with the summoner, destroying the manifestation. The summoner must make a {@dc 14} Charisma save. The summoner takes psychic damage equal to the remaining hit points of the manifestation when it was destroyed, or half as much on a successful save."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Feast on Self-Loathing",
+					"entries": [
+						"As a reaction when the summoner attempts to damage the manifestation with a spell or attack, the manifestation forces the summoner to make a {@dc 14} Intelligence saving throw. On a failed save, the manifestation gains resistance to all damage types until the end of its next turn, and gains hit points equal to the summoner's hit die. This healing can bring the manifestation past its initial hit point total."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Manifestation of Sadness",
+			"shortName": "Manifestation",
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"murkspawn",
+					"psyche manifestation"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Neutral Void"
+				}
+			],
+			"ac": [
+				{
+					"special": "the AC of its summoner"
+				}
+			],
+			"hp": {
+				"special": "half the hit point maximum of its summoner"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"psychic"
+					],
+					"note": "(deals full rebound, half on save)"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all languages known to its summoner"
+			],
+			"trait": [
+				{
+					"name": "Private Summons",
+					"entries": [
+						"The manifestation has resistance to any damage dealt by any creature except for the summoner. Any other creature that damages the manifestation summons their own manifestation."
+					]
+				},
+				{
+					"name": "Empathic Bond",
+					"entries": [
+						"While the manifestation exists, the summoner is unable to feel fear or be {@condition frightened}. The manifestation has full access to the thoughts, feelings, and memories of the summoner. When the manifestation takes damage, the summoner makes a {@dc 14} Wisdom save. On a failed save, the summoner takes psychic damage equal to half the damage dealt to the manifestation."
+					]
+				},
+				{
+					"name": "Late Bloomer",
+					"entries": [
+						"The manifestation's recharge abilities start combat expended, and cannot be used the first round of combat."
+					]
+				},
+				{
+					"name": "Aura of Lamentation",
+					"entries": [
+						"A creature that starts its turn within 30 feet of the manifestation that can see or hear it must make a {@dc 14} Intelligence saving throw or take 7 ({@damage 2d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Smoky Form",
+					"entries": [
+						"The manifestation can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Painful Reintegration {@recharge 5}",
+					"entries": [
+						"The manifestation fuses with the summoner, destroying the manifestation. The summoner must make a {@dc 14} Charisma save. The summoner takes psychic damage equal to the remaining hit points of the manifestation when it was destroyed, or half as much on a successful save."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Manifestation of Disgust",
+			"shortName": "Manifestation",
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"murkspawn",
+					"psyche manifestation"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Neutral Void"
+				}
+			],
+			"ac": [
+				{
+					"special": "the AC of its summoner"
+				}
+			],
+			"hp": {
+				"special": "half the hit point maximum of its summoner"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"psychic"
+					],
+					"note": "(deals full rebound, half on save)"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all languages known to its summoner"
+			],
+			"trait": [
+				{
+					"name": "Private Summons",
+					"entries": [
+						"The manifestation has resistance to any damage dealt by any creature except for the summoner. Any other creature that damages the manifestation summons their own manifestation."
+					]
+				},
+				{
+					"name": "Empathic Bond",
+					"entries": [
+						"While the manifestation exists, the summoner is unable to feel disgust. The manifestation has full access to the thoughts, feelings, and memories of the summoner. When the manifestation takes damage, the summoner makes a {@dc 14} Wisdom save. On a failed save, the summoner takes psychic damage equal to half the damage dealt to the manifestation."
+					]
+				},
+				{
+					"name": "Late Bloomer",
+					"entries": [
+						"The manifestation's recharge abilities start combat expended, and cannot be used the first round of combat."
+					]
+				},
+				{
+					"name": "Smoky Form",
+					"entries": [
+						"The manifestation can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Evoke Remorse",
+					"entries": [
+						"The manifestation shows moments of the summoner's prejudice in the aims of breeding trust and remorse. The summoner must make a {@dc 14} Intelligence save or take (summoner's hit die) psychic damage. The manifestation gains hit points equal to half of the psychic damage dealt."
+					]
+				},
+				{
+					"name": "Painful Reintegration {@recharge 5}",
+					"entries": [
+						"The manifestation fuses with the summoner, destroying the manifestation. The summoner must make a {@dc 14} Charisma save. The summoner takes psychic damage equal to the remaining hit points of the manifestation when it was destroyed, or half as much on a successful save."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Manifestation of Surprise",
+			"shortName": "Manifestation",
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"murkspawn",
+					"psyche manifestation"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Neutral Void"
+				}
+			],
+			"ac": [
+				{
+					"special": "the AC of its summoner"
+				}
+			],
+			"hp": {
+				"special": "half the hit point maximum of its summoner"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"psychic"
+					],
+					"note": "(deals half rebound on failed save)"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all languages known to its summoner"
+			],
+			"trait": [
+				{
+					"name": "Private Summons",
+					"entries": [
+						"The manifestation has resistance to any damage dealt by any creature except for the summoner. Any other creature that damages the manifestation summons their own manifestation."
+					]
+				},
+				{
+					"name": "Empathic Bond",
+					"entries": [
+						"While the manifestation exists, the summoner is unable to feel surprised. The summoner also has trouble gathering the emotional impetus to react properly; when the manifestation is formed and again at the start of each of the manifestation's turns, the summoner must make a {@dc 14} Wisdom save or be {@condition stunned} until the start of the manifestation's next turn. The manifestation has full access to the thoughts, feelings, and memories of the summoner."
+					]
+				},
+				{
+					"name": "Impending Doom",
+					"entries": [
+						"The manifestation loses the greater of 5 or half of its remaining hit points at the end of each of its turns."
+					]
+				},
+				{
+					"name": "Smoky Form",
+					"entries": [
+						"The manifestation can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Evoke Anxiety",
+					"entries": [
+						"The manifestation attempts to overwhelm the summoner with its most worrying troubles. The summoner must make a {@dc 14} Intelligence save or take (summoner's hit die) psychic damage. The manifestation gains hit points equal to the psychic damage dealt."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Sudden End",
+					"entries": [
+						"As a reaction when the manifestation would be destroyed, the manifestation forces the summoner to make a {@dc 14} Charisma saving throw. The summoner takes psychic damage equal to the summoner's level * the number of rounds the manifestation existed, or half as much damage on a successful save."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Manifestation of Anticipation",
+			"shortName": "Manifestation",
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"murkspawn",
+					"psyche manifestation"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Neutral Void"
+				}
+			],
+			"ac": [
+				{
+					"special": "the AC of its summoner"
+				}
+			],
+			"hp": {
+				"special": "half the hit point maximum of its summoner"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"psychic"
+					],
+					"note": "(deals full rebound, half on save)"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all languages known to its summoner"
+			],
+			"trait": [
+				{
+					"name": "Private Summons",
+					"entries": [
+						"The manifestation has resistance to any damage dealt by any creature except for the summoner. Any other creature that damages the manifestation summons their own manifestation."
+					]
+				},
+				{
+					"name": "Empathic Bond",
+					"entries": [
+						"While the manifestation exists, the summoner is unable to feel disgust. The manifestation has full access to the thoughts, feelings, and memories of the summoner. When the manifestation takes damage, the summoner makes a {@dc 14} Wisdom save. On a failed save, the summoner takes psychic damage equal to half the damage dealt to the manifestation."
+					]
+				},
+				{
+					"name": "Unpredictable",
+					"entries": [
+						"The manifestation has advantage on saving throws from the summoner's abilities, and the summoner's attacks against the manifestation have disadvantage."
+					]
+				},
+				{
+					"name": "Smoky Form",
+					"entries": [
+						"The manifestation can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Double Whammy",
+					"entries": [
+						"The manifestation uses emotional attrition, and then uses its evoke apathy ability."
+					]
+				},
+				{
+					"name": "Evoke Apathy",
+					"entries": [
+						"The manifestation promotes a nihilistic philosophy and derides the futility of the summoner'a actions. The summoner must make a {@dc 14} Intelligence save or take (summoner's hit die) psychic damage. The manifestation gains hit points equal to the psychic damage dealt."
+					]
+				},
+				{
+					"name": "Emotional Attrition {@recharge 5}",
+					"entries": [
+						"The manifestation assaults the summoner with a barrage of surprising stimuli. The summoner may make a {@dc 14} Charisma save. On a failed save, the summoner takes a stack of {@condition exhaustion} and has disadvantage on saving throws until the end of the summoner's next turn. On a successful save, the summoner takes (summoner's hit die) psychic damage instead. The manifestation gains hit points equal to half the psychic damage dealt."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Nezarin",
+			"shortName": "Nezarin",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Starfall",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Republicanist Collectivist"
+				}
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"undercover vest"
+					]
+				}
+			],
+			"hp": {
+				"formula": "27d8 + 81",
+				"average": 202
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 16,
+			"int": 18,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"con": "+7",
+				"str": "+8"
+			},
+			"skill": {
+				"athletics": "+8",
+				"intimidation": "+8",
+				"perception": "+6",
+				"persuasion": "+8",
+				"history": "+12",
+				"survival": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Elven",
+				"Arabic",
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"Nezarin can reroll a saving throw it fails. he must use the new roll."
+					]
+				},
+				{
+					"name": "Survivor",
+					"entries": [
+						"Nezarin regains 10 hit points at the start of his turn if he has at least 1 hit point but fewer hit points than half his hit point maximum."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Nezarin has advantage on saving throws against being {@condition charmed}, and magic can't put Nezarin to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Nezarin makes three weapon attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 150/600 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"Nezarin makes a weapon attack."
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"Nezarin targets one ally it can see within 30 feet of it. if the target can see and hear Nezarin, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
+					]
+				},
+				{
+					"name": "Frighten Foe (Costs 2 Actions)",
+					"entries": [
+						"Nezarin targets one enemy he can see within 30 feet of it. If the target can see and hear it, the target must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} until the end of Nezarin's next turn."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"name": "Warlord",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Warlords are legendary battlefield commanders whose names are spoken with awe. After a string of decisive victories, a warlord could easily take on the role of monarch or general and attract followers willing to die for his or her banner."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/VGM/Warlord.png?v=1.110.4",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/warlord.mp3?v=1.110.4"
+			},
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		}
+	]
+}
