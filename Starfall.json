@@ -14,8 +14,8 @@
 				]
 			}
 		],
-		"dateAdded": 1600813705,
-		"dateLastModified": 1600813705
+		"dateAdded": 1602634098,
+		"dateLastModified": 1602634098
 	},
 	"monster": [
 		{
@@ -1280,6 +1280,465 @@
 				"MW",
 				"RNG",
 				"RW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Many-Handed One",
+			"shortName": "Giant",
+			"source": "Starfall",
+			"size": "H",
+			"type": {
+				"type": "giant",
+				"tags": [
+					{
+						"tag": "giant",
+						"prefix": "stone"
+					},
+					{
+						"tag": "elemental",
+						"prefix": "earth"
+					}
+				]
+			},
+			"alignment": [
+				{
+					"special": "chaotic good"
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 105",
+				"average": 202
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 60
+			},
+			"str": 23,
+			"dex": 15,
+			"con": 25,
+			"int": 11,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"con": "+11",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"athletics": "+10",
+				"acrobatics": "+10",
+				"nature": "+4",
+				"survival": "+7"
+			},
+			"senses": [
+				"tremorsense 120 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"frightened",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Giant",
+				"Common"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Reactive",
+					"entries": [
+						"The giant can take one reaction on every turn in a combat."
+					]
+				},
+				{
+					"name": "Vigilant",
+					"entries": [
+						"The giant can't be surprised or flanked."
+					]
+				},
+				{
+					"name": "Earth Glide",
+					"entries": [
+						"The giant can burrow through nonmagical, unworked earth and stone. While doing so, the giant doesn't disturb the material it moves through."
+					]
+				},
+				{
+					"name": "Sure-Footed",
+					"entries": [
+						"The giant has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+					]
+				},
+				{
+					"name": "Damage Reduction",
+					"entries": [
+						"The giant reduces incoming damage by 3. Damage from 6th level spell slots, legendary+ weapons, and attacks expending a mythic surge bypass this restriction."
+					]
+				},
+				{
+					"name": "Peaceful",
+					"entries": [
+						"When the giant would deal vitality damage, the giant deals no vitality damage instead. The creature hit must make a Constitution save ({@dc 5}+half the damage taken) or be {@condition stunned} until the end of their next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes four fist attacks. The giant can substitute two fist attacks for a grapple attack or a suplex."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d4 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Harden",
+					"entries": [
+						"The giant becomes as still and hardy as a statue. Until the start of its next turn, it gains a +5 to its AC, it uses Constitution or Strength saves (as determined by the DM) instead of Dexterity saves, and it has resistance to all types of damage. It can only use its rebuff reaction."
+					]
+				},
+				{
+					"name": "Suplex",
+					"entries": [
+						"The giant smashes a {@condition grappled} creature into the ground, ending the grapple and knocking the target {@condition prone}. The target must make a {@dc 16} Constitution saving throw. The creature takes 28{{@damage 4d10 + 6}} bludgeoning damage, or half as much on a successful save."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Rebuff (requires harden)",
+					"entries": [
+						"The giant makes a fist attack against a creature who misses the giant with a melee attack."
+					]
+				},
+				{
+					"name": "Grab",
+					"entries": [
+						"While underground, the giant makes a grapple attack against a creature that moves on the ground above it."
+					]
+				},
+				{
+					"name": "Dig",
+					"entries": [
+						"When targeted by a ranged attack, the giant burrows underground."
+					]
+				},
+				{
+					"name": "Deflect",
+					"entries": [
+						"The giant adds +5 AC to an attack that would hit it."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Hundred-Handed One",
+				"source": "MOT",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Extra pairs of arms magically orbit the bodies of the titanic, nearly forgotten artisans known as hundred-handed ones. These giants often dwell in remote mountains and seaside cliffs, where they carve their memories into the ancient stone, covering their territories with intricate reliefs and massive statues of bygone ages. Some linger near ancient temples and palaces, ruins they once raised to the gods or archons of old."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MOT/Hundred-Handed One.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MOT/Hundred-Handed One.png?v=1.113.3",
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Flamecursed Titan",
+			"shortName": "giant",
+			"source": "Starfall",
+			"size": "H",
+			"type": "giant",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 162,
+				"formula": "13d12 + 78"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 25,
+			"dex": 11,
+			"con": 23,
+			"int": 10,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"dex": "+4",
+				"con": "+10",
+				"cha": "+7"
+			},
+			"skill": {
+				"athletics": "+11",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The giant's innate spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"3e": [
+							"{@spell fireball}",
+							"{@spell wall of fire}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Damage Reduction",
+					"entries": [
+						"The giant reduces incoming damage by 3. Damage from 6th level spell slots, legendary+ weapons, and attacks expending a mythic surge bypass this restriction."
+					]
+				},
+				{
+					"name": "Flame Aura",
+					"entries": [
+						"At the start of each of the giant's turns, each creature within 5 feet of it takes 5 fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the giant or hits it with a melee attack while within 5 feet of it takes 5 fire damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two chain attacks or hurls flame twice."
+					]
+				},
+				{
+					"name": "Chain",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d6 + 7}) bludgeoning damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Hurl Flame",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}17 ({@damage 5d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d4 + 7}) bludgeoning damage, plus 2 ({@damage 1d4}) fire damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Rocket",
+					"entries": [
+						"The giant flies up to 60 feet."
+					]
+				},
+				{
+					"name": "Shove",
+					"entries": [
+						"The giant takes the shove action."
+					]
+				},
+				{
+					"name": "Pummel",
+					"entries": [
+						"The giant uses its fist attack against a {@condition prone} target."
+					]
+				},
+				{
+					"name": "Roar (costs 2 actions)",
+					"entries": [
+						"Each creature who can hear the giant must make a {@dc 15} Charisma saving throw or be {@condition frightened}. A creature can repeat the save at the end of each of its turns. "
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Fire Giant",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Master crafters and organized warriors, fire giants dwell among volcanoes, lava floes, and rocky mountains. They are ruthless militaristic brutes whose mastery of metalwork is legendary.",
+									{
+										"type": "entries",
+										"name": "Fire Forged",
+										"entries": [
+											"Fire giant fortresses are built around and inside volcanoes or near magma-filled caverns. The blistering heat of their homes fuels the fire giants' forges, and causes the iron of their fortress walls to glow a comforting orange. In lands far removed from volcanic heat, fire giants mine coal to burn. Traditional smithies occupy places of honor in their demesnes, and the giants' stony fortresses constantly belch plumes of sooty smoke. In more remote outposts, fire giants burn wood to keep their forge fires lit, deforesting leagues of land in all directions.",
+											"Fire giants shun cold as much as their cousins the frost giants hate heat. They can adapt to cold environments with effort, though, keeping their hearth fires burning bright and wearing heavy woolen clothing and furs to stay warm."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Martial Experts",
+										"entries": [
+											"From birth, a fire giant is taught to embrace a legacy of war. At the cradle, its parents chant songs of battle. As children, fire giants play at war, hurling igneous rocks at one another across the banks of magma rivers. In later years, formal martial training becomes an integral part of life in the giants' fortresses and underground realms of smoke and ash.",
+											"The fire giants' songs are odes of battles lost and won, while their dances are martial formations of pounding feet that resound like smiths' hammers throughout their smoky halls.",
+											"Just as fire giants pass down their knowledge of crafting from generation to generation, their renowned fighting prowess comes not from wild fury but from endless discipline and training. Enemies make the mistake of underestimating fire giants based on their brutish manner, learning too late that these giants live for combat and can be shrewd tacticians."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Feudal Lords",
+										"entries": [
+											"Humanoids conquered in war become serfs to the fire giants. The serfs work the farms and fields on the outskirts of fire giant halls and fortresses, raising livestock and harvesting fields whose bounty is almost entirely tithed to the fire giant kings.",
+											"Fire giant crafters work through insight and experience rather than writing or arithmetic. Though most fire giants place little worth on such frivolousness, they sometimes keep slaves at court who are versed in such skills. Serfs not destined for court or the fields (especially dwarves) are taken to the fire giants' mountainous realms to mine ore and gemstones from deep within the earth.",
+											"Fire giants low in the ordning manage the mine tunnels and the slaves that toil there, few of which survive the difficult and dangerous work for long. Though fire giants are skilled in the engineering of mine tunnels and the gathering of ore, they place less importance on the safety of their slaves than on smelting and working the bounty those slaves produce."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Skilled Artisans",
+										"entries": [
+											"Fire giants have a fearsome reputation as soldiers and conquerors, and for their ability to burn, plunder, and destroy. Yet among the giants, fire giants produce the greatest crafters and artists. They excel at smelting and smith work, as they do at the engineering of metal and stone, and the quality of their artistry shows even in their implements of destruction and their weapons of war.",
+											"Fire giants strive to build the strongest fortresses and most potent siege weapons. They experiment with alloys to create the hardest armor, then forge the swords that can pierce it. Such work requires brawn and brains in equal measure, and fire giants high in the ordning tend to be the smartest and strongest of their kind."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Giants",
+						"entries": [
+							"Ancient empires once cast long shadows over a world that quaked beneath the giants' feet. In those lost days, these towering figures were dragon slayers, dreamers, crafters, and kings, but their kind fell from glory long ago. However, even divided among secluded clans scattered throughout the world, the giants maintain the customs and traditions of old.",
+							{
+								"name": "Old as Legend",
+								"type": "entries",
+								"entries": [
+									"In remote regions of the world, the last remaining plinths, monoliths, and statues of the great giant empires bow their heads in desolate obscurity. Where once those empires sprawled across all lands, now the giants dwell in isolated tribes and clans.",
+									"Giants are almost as old as dragons, which were still young when the giants' heavy feet first shook the foundations of the world. As they spread across new lands, giants and dragons fought bitter generational wars that nearly brought both sides low. No living giant remembers what started the conflict, but myths and tales of their race's glorious dawn are still sung in their steadings and holdfasts, vilifying the primeval wyrms. Giants and dragons continue to harbor grudges against one another, and it is seldom that they will meet or occupy the same area without a fight."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "The Ordning",
+								"entries": [
+									"Each of the main giant races-the cloud, fire, frost, hill, stone, and storm giants-are related by common elements of history, religion, and culture. They view one another as kindred, keeping any inherent animosity over territory and ambition to a minimum.",
+									"Giants belong to a caste structure called the ordning. Based on social class and highly organized, the ordning assigns a social rank to each giant. By understanding its place in the ordning, a giant knows which other giants are inferior or superior to it, since no two giants are equal. Each of the giant races analyzes a different combination of skills or qualities to determine the ordning. Giants make excelling in these qualities the purpose of their lives.",
+									"At the highest level of the ordning, the races of the giants are also ranked according to status. Storm giants are the highest in the ordning, followed by cloud giants, fire giants, frost giants, stone giants, hill giants, and finally giant kin such as fomorians, ettins, and ogres.",
+									"Regardless of a giant's rank among its own race, the chief of a hill giant tribe is inferior to the most common of stone giants. The lowest ranked giant of any type is superior to the highest ranked giant of an inferior type. It isn't considered evil to disrespect or even betray a giant of another type, merely rude."
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Giant Gods",
+								"entries": [
+									"When the giants' ancient empires fell, Annam, father of all giants, forsook his children and the world. He swore never to look upon either again until the giants had returned to their glory and reclaimed their birthright as rulers of the world. As a result, giants pray not to Annam but to his divine children, along with a host of hero-deities and godly villains that make up the giants' pantheon.",
+									"Chief among these gods are the children of Annam, whose sons represent each type of giant: Stronmaus for storm giants, Memnor for cloud giants, Skoraeus Stonebones for stone giants, Thrym for frost giants, Surtur for fire giants, and Grolantor for hill giants. Not all giants automatically revere their kind's primary deity, however. Many good cloud giants refuse to worship the deceitful Memnor, and a storm giant dwelling in the icy mountains of the north might pay more homage to Thrym than Stronmaus. Other giants feel a stronger connection to Annam's daughters, who include Hiatea, the huntress and home warden; Iallanis, goddess of love and peace; and Diancastra, an impetuous and arrogant trickster.",
+									"Some giants abandon their own gods and fall prey to demon cults, paying homage to Baphomet or Kostchtchie. To worship them or any other non-giant deity is a great sin against the ordning, and almost certain to make a giant an outcast."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Fire Giant.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Fire Giant.png?v=1.113.3",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/fire-giant.mp3?v=1.113.3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
 			],
 			"conditionInflict": [
 				"frightened"
