@@ -14,8 +14,8 @@
 				]
 			}
 		],
-		"dateAdded": 1603238378,
-		"dateLastModified": 1603238378
+		"dateAdded": 1611708705,
+		"dateLastModified": 1611708705
 	},
 	"monster": [
 		{
@@ -2035,6 +2035,473 @@
 			],
 			"conditionInflictSpell": [
 				"invisible"
+			]
+		},
+		{
+			"name": "Blightlinked",
+			"shortName": "Zombie",
+			"source": "Starfall",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 37,
+				"formula": "5d8 + 15"
+			},
+			"speed": {
+				"walk": 35,
+				"climb": {
+					"number": 30,
+					"condition": "on blighted terrain"
+				}
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 16,
+			"wis": 14,
+			"cha": 17,
+			"save": {
+				"con": "+5",
+				"wis": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"telepathy 120 ft."
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Blighted",
+					"entries": [
+						"A humanoid slain within 15 feet of the blightlinked rises as a blightlinked on its next turn."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zombie makes two claw attacks. For each of these attacks that reduces a creature to 0 hit points, the zombie can make an additional claw attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Husk Zombie Bursters",
+					"entries": [
+						"Some husk zombies become bloated with disease and bile, their frenzied state pushing them to rush other living creatures, explode, and spread their horrid infection. A husk zombie burster has the following additional action option:",
+						{
+							"type": "entries",
+							"name": "Burst",
+							"entries": [
+								"The zombie explodes and is destroyed. Each creature within 5 feet of it must make a {@dc 12} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one. A humanoid creature killed by this damage rises as a husk zombie after 1 minute."
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"name": "Husk Zombie",
+				"source": "EGW",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"The wastes of Eastern Wynandir retain many curses and corruptions from the time of the Calamity, the worst of which pervert the sanctity of death. One such curse manifests as a terrible roving fog that draws the corpses of the fallen to rise as husk zombies—resilient undead of frightening speed and bloodlust. As well, some of the more heinous fiends that walk these scarred lands feed on the life force of the living, leaving these terrible undead in their wake."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/EGW/Husk Zombie.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/EGW/Husk Zombie.png?v=1.120.1",
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Proto-Blightmind",
+			"shortName": "Blightmind",
+			"source": "Starfall",
+			"size": "H",
+			"type": "undead",
+			"alignment": [
+				{
+					"special": "Void Anarchic Collectivist"
+				}
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "23d12 + 138",
+				"average": 287
+			},
+			"speed": {
+				"walk": 20,
+				"burrow": 10,
+				"climb": 20
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 22,
+			"int": 21,
+			"wis": 19,
+			"cha": 24,
+			"save": {
+				"int": "+11",
+				"wis": "+10",
+				"cha": "+13"
+			},
+			"skill": {
+				"arcana": "+11",
+				"deception": "+13",
+				"insight": "+16",
+				"intimidation": "+13",
+				"persuasion": "+13",
+				"history": "+17",
+				"investigation": "+11",
+				"medicine": "+10",
+				"nature": "+11",
+				"religion": "+11",
+				"perception": "+16"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 26,
+			"resist": [
+				"necrotic",
+				"psychic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned",
+				"prone",
+				"unconscious"
+			],
+			"languages": [
+				"understands Common",
+				"Deep Speech",
+				"and Undercommon but can't speak",
+				"telepathy 5 miles"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The elder brain's innate spellcasting ability is Intelligence (spell save {@dc 19}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell blight}",
+						"{@spell detect thoughts}",
+						"{@spell levitate}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell dominate monster}",
+							"{@spell mass suggestion}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Creature Sense",
+					"entries": [
+						"The blightmind is aware of the presence of creatures within 5 miles of it that have an Intelligence score of 4 or higher. It knows the distance and direction to each creature, as well as each one's intelligence score, but can't sense anything else about it. A creature protected by a {@spell mind blank} spell, a {@spell nondetection} spell, or similar magic can't be perceived in this manner."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the blightmind fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The blightmind has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Telepathic Hub",
+					"entries": [
+						"The blightmind can use its telepathy to initiate and maintain telepathic conversations with up to ten creatures at a time. The elder brain can let those creatures telepathically hear each other while connected in this way."
+					]
+				},
+				{
+					"name": "Blighted",
+					"entries": [
+						"Any eligible creature which dies in the presence of the blightmind rises again as a mindlinked blighted."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 30 ft., one target. {@h}21 ({@damage 4d8 + 3}) bludgeoning damage. If the target is a Huge or smaller creature, it is {@condition grappled} (escape {@dc 16}) and takes 10 ({@damage 1d8 + 6}) psychic damage at the start of each of its turns until the grapple ends. The blightmind can have up to eight targets {@condition grappled} at a time."
+					]
+				},
+				{
+					"name": "Mind Blast {@recharge 5}",
+					"entries": [
+						"The blightmind magically emits psychic energy. Creatures of the blightmind's choice within 60 feet of it must succeed on a {@dc 19} Intelligence saving throw or take 39 ({@damage 6d10 + 6}) psychic damage and be {@condition stunned} for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Spew Bile {@recharge 5}",
+					"entries": [
+						"The blightmind vomits in a 60-foot cone. Each creature in the cone must make a {@dc 20} Constitution saving throw and take {@damage 8d6 + 6} necrotic damage and be {@condition poisoned} for 1 minute. With a successful save, a creature takes half damage and is not {@condition poisoned}. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Harden",
+					"entries": [
+						"When the blightmind would take damage, it gains resistance to bludgeoning, radiant, slashing, and piercing damage until the end of the current turn."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Tentacle",
+					"entries": [
+						"The blightmind makes a tentacle attack."
+					]
+				},
+				{
+					"name": "React",
+					"entries": [
+						"The blightmind regains its reaction."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Orcus",
+				"source": "MTF"
+			},
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Elder Brain",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"The ultimate expression of illithid domination, an elder brain sprawls within a vat of viscous brine, touching the thoughts of creatures near and far. It scrawls upon the canvas of their minds, rewriting their thoughts and authoring their dreams.",
+											{
+												"name": "Psychic Infiltrators",
+												"entries": [
+													" When an elder brain infiltrates a mind, it alters the creature's perception and deceives its senses, causing it to see, hear, touch, taste, or feel reality according to the elder brain's intent. From across great distances, it implants subconscious suggestions or subtly influences dreams to compel creatures toward a course of action that benefits its grand plan.",
+													"When its insidious suggestions fail to take hold, an elder brain asserts its dominance more directly. It seizes control of a resistant mind and controls the creature's body as it would a puppet. Against the rare, strong-willed stalwart that defies it or attacks it, an elder brain sends a blast of overwhelming psychic force to crush the upstart's mind, rendering the creature a thoughtless, drooling shell.",
+													"When a mind flayer perishes, the elder brain's servants feed the contents of its skull to their master, which absorbs the illithid's brain and all the knowledge and experience contained therein. In this way the elder brain continually increases its knowledge, uniting the thoughts and experiences of the illithid colony into a unified whole. Mind flayers conceive of this \"oneness\" as a sacred state in the same way that a worshiper of a human deity might view an eternal afterlife in the heavens-for an elder brain can evoke the persona of any illithid it has ever absorbed.",
+													"The ambitions of an elder brain are always tempered by its relative immobility. Although its telepathic senses can reach for miles, moving anywhere is always a dangerous proposition. If forced outside its brine pool, an elder brain will swiftly expire, and transporting an elder brain in its pool through confining and tortuous subterranean tunnels frequently proves difficult or impossible."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Devourer of Thoughts",
+												"entries": [
+													" An elder brain sustains itself by consuming the brains of other creatures. When the mind flayer servants that guard and tend to an elder brain don't bring its meals directly to it, the elder brain reaches out with tendrils of thought, mentally compelling creatures to come to it so that it may feed upon them."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Hive Mind",
+												"entries": [
+													" Non-illithids call this creature an elder brain because it acts as the central communication hub for an entire mind flayer colony just as a brain does for a living body. Linked to the elder brain, the colony acts like a single organism, acting in concert as if each illithid were the digit of a hand."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Ego Unhindered",
+												"entries": [
+													" Each elder brain considers itself and its desires the most important things in the multiverse, the mind flayers in its colony nothing more than extensions of its will. But no two elder brains are alike, and each presides over its colony according to its own unique personality and storehouse of collected knowledge and experience. Some elder brains reign as domineering tyrants, while others serve more benignly as sages, counselors, and repositories of information and lore for the mind flayers that protect and nourish them."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "An Elder Brain's Lair",
+										"entries": [
+											"The lair of an elder brain always lies deep in the heart of a mind flayer colony. The creature dwells in a dimly glowing brine pool, filled with foul and brackish water infused with the elder brain's vital fluids and with psionic energy."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"When fighting inside its lair, an elder brain can use lair actions. On initiative count 20 (losing initiative ties), an elder brain can take one lair action to cause one of the following effects; the elder brain can't use the same lair action two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"The elder brain casts {@spell wall of force}.",
+											"The elder brain targets one friendly creature it can sense within 120 feet of it. The target has a flash of inspiration and gains advantage on one attack roll, ability check, or saving throw it makes before the end of its next turn. If the target doesn't or can't use this benefit in that time, the inspiration is lost.",
+											"The elder brain targets one creature it can sense within 120 feet of it and anchors it by sheer force of will. The target must succeed on a {@dc 18} Charisma saving throw or be unable to leave its current space. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The territory within 5 miles of an elder brain is altered by the creature's psionic presence, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Creatures within 5 miles of an elder brain feel as if they are being followed, even when they are not.",
+											"The elder brain can overhear any telepathic conversation happening within 5 miles of it. The creature that initiated the telepathic conversation makes a {@dc 18} Wisdom ({@skill Insight}) check when telepathic contact is first established. If the check succeeds, the creature is aware that something is eavesdropping on the conversation. The nature of the eavesdropper isn't revealed, and the elder brain can't participate in the telepathic conversation unless it has formed a psychic link with the creature that initiated it.",
+											"Any creature with which the elder brain has formed a psychic link hears faint, incomprehensible whispers in the deepest recesses of its mind. This psychic detritus consists of the elder brain's stray thoughts commingled with those of other creatures to which it is linked."
+										]
+									},
+									"If the elder brain dies, these effects immediately end."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VGM/Elder Brain.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/VGM/Elder Brain.png?v=1.120.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/elder-brain.mp3?v=1.120.1"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DS",
+				"TP",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"stunned"
+			],
+			"conditionInflictSpell": [
+				"charmed"
 			]
 		}
 	]
