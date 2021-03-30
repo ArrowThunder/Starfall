@@ -14,8 +14,8 @@
 				]
 			}
 		],
-		"dateAdded": 1612275415,
-		"dateLastModified": 1612275415
+		"dateAdded": 1617147680,
+		"dateLastModified": 1617147680
 	},
 	"monster": [
 		{
@@ -2855,6 +2855,1835 @@
 			"conditionInflictSpell": [
 				"charmed"
 			]
+		},
+		{
+			"name": "Goblin Strafer",
+			"shortName": "Goblin",
+			"source": "Starfall",
+			"page": 166,
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"light-duty vest"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d6 + 16",
+				"average": 44
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"stealth": "+7",
+				"survival": "+3",
+				"medicine": "+3",
+				"perception": "+5",
+				"athletics": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The goblin can take the Disengage, Dash or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Camouflage Armor",
+					"entries": [
+						"Wisdom (Perception) checks to detect the goblin that rely on sight have disadvantage."
+					]
+				},
+				{
+					"name": "Natural Coward",
+					"entries": [
+						"The goblin has disadvantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Low Shooter",
+					"entries": [
+						"Ranged attack rolls the goblin makes while {@condition prone} do not suffer disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The goblin makes two attacks."
+					]
+				},
+				{
+					"name": "Bowie Knife",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing or slashing damage."
+					]
+				},
+				{
+					"name": "Assault Rifle",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 100/500 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Take Cover",
+					"entries": [
+						"When attacked at range, the goblin falls {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Goblin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large-sometimes overwhelming-numbers. They crave power and regularly abuse whatever authority they obtain.",
+									{
+										"name": "Goblinoids",
+										"type": "entries",
+										"entries": [
+											"Goblins belong to a family of creatures called goblinoids. Their larger cousins, hobgoblins and bugbears, like to bully goblins into submission. Goblins are lazy and undisciplined, making them poor servants, laborers, and guards."
+										]
+									},
+									{
+										"name": "Malicious Glee",
+										"type": "entries",
+										"entries": [
+											"Motivated by greed and malice, goblins can't help but celebrate the few times they have the upper hand. They dance, caper with sheer joy when victory is theirs. Once their revels have ended, goblins delight in the torment of other creatures and embrace all manner of wickedness."
+										]
+									},
+									{
+										"name": "Leaders and Followers",
+										"type": "entries",
+										"entries": [
+											"Goblins are ruled by the strongest or smartest among them. A goblin boss might command a single lair, while a goblin king or queen (who is nothing more than a glorified goblin boss) rules hundreds of goblins, spread out among multiple lairs to ensure the tribe's survival. Goblin bosses are easily ousted, and many goblin tribes are taken over by hobgoblin warlords or bugbear chiefs."
+										]
+									},
+									{
+										"name": "Challenging Lairs",
+										"type": "entries",
+										"entries": [
+											"Goblins festoon their lairs with alarms designed to signal the arrival of intruders. Those lairs are also riddled with narrow tunnels and bolt-holes that human-sized creatures can't navigate, but which goblins can crawl through with ease, allowing them to flee or to circle around and surprise their enemies. Rat Keepers and Wolf Riders. Goblins have an affinity for rats and wolves, raising them to serve as companions and mounts, respectively. Like rats, goblins shun sunlight and sleep underground during the day. Like wolves, they are pack hunters, made bolder by their numbers. When they hunt from the backs of wolves, goblins use hit-and-run attacks."
+										]
+									},
+									{
+										"name": "Worshipers of Maglubiyet",
+										"type": "entries",
+										"entries": [
+											"Maglubiyet the Mighty One, the Lord of Depths and Darkness, is the greater god of goblinoids. Envisioned by most goblins as an eleven-foot-tall battle-scarred goblin with black skin and fire erupting from his eyes, he is worshiped not out of adoration but fear. Goblins believe that when they die in battle, their spirits join the ranks of Maglubiyet's army on the plane of Acheron. This is a \"privilege\" that most goblins dread, fearing the Mighty One's eternal tyranny even more than death."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Goblin.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Goblin.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/goblin.mp3?v=1.125.1"
+			},
+			"altArt": [
+				{
+					"name": "Goblin",
+					"source": "RMBRE"
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Goblin Skirmisher",
+			"shortName": "Goblin",
+			"source": "Starfall",
+			"page": 166,
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"concealable vest"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d6 + 4",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"stealth": "+6",
+				"survival": "+2",
+				"perception": "+2",
+				"athletics": "+1"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The goblin can take the Disengage, Dash or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Natural Coward",
+					"entries": [
+						"The goblin has disadvantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Camouflage Armor",
+					"entries": [
+						"Wisdom (Perception) checks to detect the goblin that rely on sight have disadvantage."
+					]
+				},
+				{
+					"name": "Low Shooter",
+					"entries": [
+						"Ranged attack rolls the goblin makes while {@condition prone} do not suffer disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bowie Knife",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing or slashing damage."
+					]
+				},
+				{
+					"name": "Hunting Rifle",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 100/500 ft., one target. {@h}8 ({@damage 1d12 + 2}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Take Cover",
+					"entries": [
+						"When attacked at range, the goblin falls {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Goblin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large-sometimes overwhelming-numbers. They crave power and regularly abuse whatever authority they obtain.",
+									{
+										"name": "Goblinoids",
+										"type": "entries",
+										"entries": [
+											"Goblins belong to a family of creatures called goblinoids. Their larger cousins, hobgoblins and bugbears, like to bully goblins into submission. Goblins are lazy and undisciplined, making them poor servants, laborers, and guards."
+										]
+									},
+									{
+										"name": "Malicious Glee",
+										"type": "entries",
+										"entries": [
+											"Motivated by greed and malice, goblins can't help but celebrate the few times they have the upper hand. They dance, caper with sheer joy when victory is theirs. Once their revels have ended, goblins delight in the torment of other creatures and embrace all manner of wickedness."
+										]
+									},
+									{
+										"name": "Leaders and Followers",
+										"type": "entries",
+										"entries": [
+											"Goblins are ruled by the strongest or smartest among them. A goblin boss might command a single lair, while a goblin king or queen (who is nothing more than a glorified goblin boss) rules hundreds of goblins, spread out among multiple lairs to ensure the tribe's survival. Goblin bosses are easily ousted, and many goblin tribes are taken over by hobgoblin warlords or bugbear chiefs."
+										]
+									},
+									{
+										"name": "Challenging Lairs",
+										"type": "entries",
+										"entries": [
+											"Goblins festoon their lairs with alarms designed to signal the arrival of intruders. Those lairs are also riddled with narrow tunnels and bolt-holes that human-sized creatures can't navigate, but which goblins can crawl through with ease, allowing them to flee or to circle around and surprise their enemies. Rat Keepers and Wolf Riders. Goblins have an affinity for rats and wolves, raising them to serve as companions and mounts, respectively. Like rats, goblins shun sunlight and sleep underground during the day. Like wolves, they are pack hunters, made bolder by their numbers. When they hunt from the backs of wolves, goblins use hit-and-run attacks."
+										]
+									},
+									{
+										"name": "Worshipers of Maglubiyet",
+										"type": "entries",
+										"entries": [
+											"Maglubiyet the Mighty One, the Lord of Depths and Darkness, is the greater god of goblinoids. Envisioned by most goblins as an eleven-foot-tall battle-scarred goblin with black skin and fire erupting from his eyes, he is worshiped not out of adoration but fear. Goblins believe that when they die in battle, their spirits join the ranks of Maglubiyet's army on the plane of Acheron. This is a \"privilege\" that most goblins dread, fearing the Mighty One's eternal tyranny even more than death."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Goblin.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Goblin.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/goblin.mp3?v=1.125.1"
+			},
+			"altArt": [
+				{
+					"name": "Goblin",
+					"source": "RMBRE"
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Bugbear Rusher",
+			"source": "Starfall",
+			"page": 33,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"light-duty vest"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 14,
+			"int": 8,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"stealth": "+6",
+				"survival": "+5",
+				"athletics": "+7",
+				"perception": "+3",
+				"medicine": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Surprise Attack",
+					"entries": [
+						"If the bugbear surprises a creature and hits it with an attack or weapon spray during the first round of combat, the target takes an extra 10 ({@damage 3d6}) damage from the attack."
+					]
+				},
+				{
+					"name": "Camouflage Armor",
+					"entries": [
+						"Wisdom (Perception) checks to detect the bugbear that rely on sight have disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bugbear makes two normal attacks with its assault rifle, then swings with its rifle blade if able. Alternatively, it swings twice with its rifle blade."
+					]
+				},
+				{
+					"name": "Charging Rush",
+					"entries": [
+						"The bugbear wildly sprays its assault rifle, moves up to its movement to get closer to an enemy, which must end it within melee range of an enemy. It then makes a rifle blade attack."
+					]
+				},
+				{
+					"name": "Rifle Blade",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d8 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Assault Rifle (always automatic)",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 90/45 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Assault Rifle (wild spray)",
+					"entries": [
+						"Each creature in a 90 foot cone must make a Dexterity saving throw ({@dc 12}). On a failed save, a creature takes half of 8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Bugbear",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.",
+									{
+										"name": "Goblinoids",
+										"type": "entries",
+										"entries": [
+											"Bugbears are often found in the company of their cousins, hobgoblins and goblins. Bugbears usually enslave goblins they encounter, and they bully hobgoblins into giving them gold and food in return for serving as scouts and shock troops. Even when paid, bugbears are at best unreliable allies, yet goblins and hobgoblins understand that no matter how much bugbears might drain a tribe of resources, these creatures are a potent force."
+										]
+									},
+									{
+										"name": "Followers of Hruggek",
+										"type": "entries",
+										"entries": [
+											"Bugbears worship Hruggek, a lesser god who dwells on the plane of Acheron. In the absence of their goblinoid kin, bugbears form loose war bands, each one led by its fiercest member. Bugbears believe that when they die, their spirits have a chance to fight at Hruggek's side. They try to prove themselves worthy by defeating as many foes as possible."
+										]
+									},
+									{
+										"name": "Venal Ambushers",
+										"type": "entries",
+										"entries": [
+											"Despite their intimidating builds, bugbears move with surprising stealth. They are fond of setting ambushes and flee when outmatched. They are dependable mercenaries as long as they are supplied food, drink, and treasure, but a bugbear forgets any bond when its life is on the line. A wounded member of a bugbear band might be left behind to help the rest of the band escape. Afterward, that bugbear might help pursuers track down its former companions if doing so saves its life."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Bugbear.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Bugbear.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bugbear.mp3?v=1.125.1"
+			},
+			"traitTags": [
+				"Brute"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Hobgoblin Soldier",
+			"source": "Starfall",
+			"page": 186,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"tactical vest"
+					]
+				},
+				{
+					"ac": 20,
+					"from": [
+						"tactical vest, shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 14,
+			"int": 11,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"athletics": "+8",
+				"medicine": "+4",
+				"perception": "+7",
+				"stealth": "+5",
+				"survival": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Inspiring Presence",
+					"entries": [
+						"Allies within 30 feet of the hobgoblin which can see it gain its Disciplined trait."
+					]
+				},
+				{
+					"name": "Disciplined",
+					"entries": [
+						"The hobgoblin has advantage on saving throws against being {@condition frightened} or {@condition charmed}."
+					]
+				},
+				{
+					"name": "Camouflage Armor",
+					"entries": [
+						"Wisdom (Perception) checks to detect the goblin that rely on sight have disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hobgoblin makes three weapon attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing or slashing damage, or 7 ({@damage 1d10 + 2}) piercing or slashing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Revolver",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 60/300 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Assault Rifle",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 90/450 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Assault Rifle (wild spray)",
+					"entries": [
+						"Each creature in a 90 foot cone must make a Dexterity saving throw ({@dc 13}). On a failed save, a creature takes half of 7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Hobgoblin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"War horns sound, stones fly from catapults, and the thunder of a thousand booted feet echoes across the land as hobgoblins march to battle. Across the borderlands of civilization, settlements and settlers must contend with these aggressive humanoids, whose thirst for conquest is never satisfied.",
+									"Hobgoblins have dark orange or red-orange skin, and hair ranging from dark red-brown to dark gray. Yellow or dark brown eyes peer out beneath their beetling brows, and their wide mouths sport sharp and yellowed teeth. A male hobgoblin might have a large blue or red nose, which symbolizes virility and power among goblinkin. Hobgoblins can live as long as humans, though their love of warfare and battle means that few do.",
+									{
+										"name": "Goblinoids",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins belong to a family of creatures called goblinoids. They are often found lording over their cousins, the smaller goblins and the ferocious bugbears."
+										]
+									},
+									{
+										"name": "Martial Might",
+										"type": "entries",
+										"entries": [
+											"A hobgoblin measures virtue by physical strength and martial prowess, caring about nothing except the opportunity to demonstrate skill and cunning in battle. Hobgoblins of high military rank attain their positions by force, then hold those positions by imposing their authority through draconian measures.",
+											"Hobgoblins train to fight with a variety of weapons, and have great skill at crafting arms, armor, siege engines, and other military devices. Organized and disciplined, they take exceptional care of their weapons, armor, and personal possessions. They favor the bold colors associated with their tribes, and trim their often-elaborate uniforms with blood-red piping and leather dyed black."
+										]
+									},
+									{
+										"name": "Military Legions",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins organize themselves into tribal bands known as legions. In their martial society, every hobgoblin has a rank, from the powerful leaders and champions, to the rank-and-file foot soldiers, to the goblins that find themselves driven into the front lines at spear point. A legion is headed by a warlord with several captains serving under its command. A hobgoblin warlord is a ruthless tyrant more interested in strategy, victory, glory, reputation, and dominion than leading troops into battle.",
+											"As loyal and disciplined as hobgoblins are in their own legion, rival legions compete constantly for reputation and status. Meetings between legions erupt in violence if troops aren't restrained, and only exceptionally powerful leaders can force legions to cooperate on the battlefield."
+										]
+									},
+									{
+										"name": "Strategic Thinkers",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins have a strong grasp of tactics and discipline, and can carry out sophisticated battle plans under the direction of a strategically minded leader. However, they hate elves and attack them first in battle over any other opponents, even if doing so would be a tactical error.",
+											"Legions often supplement their ranks with less reliable and more expendable troops, including goblins, bugbears, orcs, evil humans, ogres, and giants."
+										]
+									},
+									{
+										"name": "Beast Trainers",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins have a long history of training animals to service. Like the more civilized races, they use oxen and horses to transport goods and weaponry over long distances. They communicate with each other using trained ravens, and keep vicious wolves to guard prisoners and protect hobgoblin camps. Hobgoblin cavalry use trained worgs as steeds, in the same way that goblins ride wolves. Some tribes even keep carnivorous apes as fighting beasts."
+										]
+									},
+									{
+										"name": "Conquer and Control",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins claim lands with abundant resources, and they can be found in forests and mountains, near mines and humanoid settlements, and anywhere else that wood, metal, and potential slaves can be found. They build and conquer strongholds in strategically advantageous locations, which they then use as staging areas to expand their territory.",
+											"Hobgoblin warlords never tire of combat, but they don't take up arms lightly. Before they attack, hobgoblins conduct thorough reconnaissance to gauge the strengths and weaknesses of their foes. When assaulting a stronghold, they surround it first to cut off escape routes and supply lines, then slowly starve their enemies out.",
+											"Hobgoblins fortify their own holdings, bolstering existing defenses with innovations of their own. Whether they lair in cavern complexes, dungeons, ruins, or forests, they protect their strongholds with ditches, fences, gates, guard towers, pit traps, and crude catapults or ballistas."
+										]
+									},
+									{
+										"name": "Legion of Maglubiyet",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins worship Maglubiyet the Mighty One, the greater god of goblinoids. As terrifying as this figure is, hobgoblins don't fear death, believing that when they die in battle, their spirits join the honored ranks of Maglubiyet's army on the plane of Acheron."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Hobgoblin.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Hobgoblin.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hobgoblin.mp3?v=1.125.1"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Hobgoblin Steel Shadow",
+			"shortName": "Hobgoblin",
+			"source": "Starfall",
+			"page": 162,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "8d8 + 24",
+				"average": 60
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 16,
+			"int": 14,
+			"wis": 16,
+			"cha": 11,
+			"save": {
+				"dex": "+7",
+				"str": "+5",
+				"wis": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+5",
+				"stealth": "+10",
+				"survival": "+6",
+				"perception": "+9",
+				"medicine": "+6",
+				"investigation": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The hobgoblin is a 2nd-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell true strike}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell disguise self}",
+								"{@spell expeditious retreat}",
+								"{@spell fog cloud}",
+								"{@spell silent image}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the hobgoblin is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hobgoblin makes five attacks, each of which can be an unarmed strike or a dart attack. It can also use Shadow Jaunt once, either before or after one of the attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Dark Leap",
+					"entries": [
+						"The hobgoblin magically teleports, along with any equipment it is wearing or carrying and one ally whose space it is occupying, up to 60 feet to an unoccupied space it can see. Its destination must be heavily obscured or in dim light or darkness, and the space it leaves is filled with heavily obscuring smoke which dissipates at the start of its next turn."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"name": "Hobgoblin Iron Shadow",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"The Iron Shadows are hobgoblin monks that serve as secret police, scouts, and assassins. Among other hobgoblins, they spy to ferret out treachery, rebellion, and betrayal.",
+											{
+												"name": "Trained in Secret",
+												"entries": [
+													" Iron Shadows are recruited from across the hobgoblin ranks. Each member keeps her eyes open for potential recruits, those whose agility and stamina are matched only by an ironclad commitment to Maglubiyet's will.",
+													"A candidate for admission undergoes a series of tests designed to reveal any potential for treachery. Those who fail are slain, while those who pass receive secret training in the magical and martial arts. This indoctrination is a slow and arduous process; many aspirants don't finish it, and years might go by during which the Iron Shadows welcome no new members into their ranks. While a recruit is in training, it serves the Iron Shadows by looking for and reporting suspicious behavior.",
+													"Their masks also signify the supposed origin of their fighting techniques. The priests of Maglubiyet teach that the Great One stole the secrets of shadows from an archdevil, allowing his followers to conceal their identities, walk between shadows, and craft illusions to confuse and confound their enemies."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Masters of Shadow and Fist",
+												"entries": [
+													" When a recruit's training is complete, she is ready to wield a deadly combination of unarmed fighting techniques and shadow magic to deceive and defeat her foes. She continues to spy on other hobgoblins, but is now also empowered to conduct assassinations and spy missions, both against enemies and among goblinoids. These missions are ordained by the clerics of Maglubiyet, who keep a careful eye on the goblinoid community to ensure that it functions according to Maglubiyet's will."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Masked Devils",
+												"entries": [
+													" Iron Shadows on a secret mission wear masks crafted to resemble devils, both to conceal their identities and to strike fear into their foes."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VGM/Hobgoblin Iron Shadow.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/VGM/Hobgoblin Iron Shadow.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hobgoblin-iron-shadow.mp3?v=1.125.1"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Orc Charger",
+			"source": "Starfall",
+			"page": 246,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 9",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 7,
+			"wis": 11,
+			"cha": 14,
+			"skill": {
+				"intimidation": "+6",
+				"athletics": "+5",
+				"survival": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Orc"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Intimidating Charge",
+					"entries": [
+						"At the end of a turn the orc used its aggressive trait, each creature it attacked or forced to make a Dexterity save that turn must make a Wisdom saving throw ({@dc 12}) or be {@condition frightened} until the end of the orc's next turn. A creature the orc damaged this turn has disadvantage on this save."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rifle Blade",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Assault Rifle (always automatic)",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 90/450 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Assault Rifle (wild spray)",
+					"entries": [
+						"Each creature in a 90 foot cone must make a Dexterity saving throw ({@dc 11}). On a failed save, a creature takes half of 8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Orc",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Orcs are savage raiders and pillagers with stooped postures, low foreheads, and piggish faces with prominent lower canines that resemble tusks.",
+									{
+										"name": "Gruumsh One-Eye",
+										"entries": [
+											" Orcs worship Gruumsh, the mightiest of the orc deities and their creator. The orcs believe that in ancient days, the gods gathered to divide the world among their followers. When Gruumsh claimed the mountains, he learned they had been taken by the dwarves. He laid claim to the forests, but those had been settled by the elves. Each place that Gruumsh wanted had already been claimed. The other gods laughed at Gruumsh, but he responded with a furious bellow. Grasping his mighty spear, he laid waste to the mountains, set the forests aflame, and carved great furrows in the fields. Such was the role of the orcs, he proclaimed, to take and destroy all that the other races would deny them. To this day, the orcs wage an endless war on humans, elves, dwarves, and other folk.",
+											"Orcs hold a particular hatred for elves. The elven god Corellon Larethian half-blinded Gruumsh with a well-placed arrow to the orc god's eye. Since then, the orcs have taken particular joy in slaughtering elves. Turning his injury into a baleful gift, Gruumsh grants divine might to any champion who willingly plucks out one of its eyes in his honor."
+										],
+										"type": "entries"
+									},
+									{
+										"type": "entries",
+										"name": "Tribes like Plagues",
+										"entries": [
+											"Orcs gather in tribes that exert their dominance and satisfy their bloodlust by plundering villages, devouring or driving off roaming herds, and slaying any humanoids that stand against them. After savaging a settlement, orcs pick it clean of wealth and items usable in their own lands. They set the remains of villages and camps ablaze, then retreat whence they came, their bloodlust satisfied."
+										]
+									},
+									{
+										"name": "Ranging Scavengers",
+										"type": "entries",
+										"entries": [
+											"Their lust for slaughter demands that orcs dwell always within striking distance of new targets. As such, they seldom settle permanently, instead converting ruins, cavern complexes, and defeated foes' villages into fortified camps and strongholds. Orcs build only for defense, making no innovation or improvement to their lairs beyond mounting the severed body parts of their victims on spiked stockade walls or pikes jutting up from moats and trenches.",
+											"When an existing territory is depleted of food, an orc tribe divides into roving bands that scout for choice hunting grounds. When each party returns, it brings back trophies and news of targets ripe for attack, the richest of which is chosen. The tribe then sets out en masse to carve a bloody path to its new territory.",
+											"On rare occasions, a tribe's leader chooses to hold onto a particularly defensible lair for decades. The orcs of such a tribe must range far across the countryside to sate their appetites."
+										]
+									},
+									{
+										"name": "Leadership and Might",
+										"type": "entries",
+										"entries": [
+											"Orc tribes are mostly patriarchal, flaunting such vivid or grotesque titles as Many-Arrows, Screaming Eye, and Elf Ripper. Occasionally, a powerful war chief unites scattered orc tribes into a single rampaging horde, which runs roughshod over other orc tribes and humanoid settlements from a position of overwhelming strength.",
+											"Strength and power are the greatest of orcish virtues, and orcs embrace all manner of mighty creatures in their tribes. Rejecting notions of racial purity, they proudly welcome ogres, trolls, half-orcs, and orogs into their ranks. As well, orcs respect and fear the size and power of evil giants, and often serve them as guards and soldiers."
+										]
+									},
+									{
+										"name": "Orc Crossbreeds",
+										"type": "entries",
+										"entries": [
+											"Luthic, the orc goddess of fertility and wife of Gruumsh, demands that orcs procreate often and indiscriminately so that orc hordes swell generation after generation. The orcs' drive to reproduce runs stronger than any other humanoid race, and they readily crossbreed with other races. When an orc procreates with a non-orc humanoid of similar size and stature (such as a human or a dwarf), the resulting child is either an orc or a half-orc. When an orc produces young with an ogre, the child is a half-ogre of intimidating strength and brutish features called an ogrillon."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Orc.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Orc.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/orc.mp3?v=1.125.1"
+			},
+			"altArt": [
+				{
+					"name": "Iceshield Orc",
+					"source": "PotA"
+				}
+			],
+			"traitTags": [
+				"Aggressive"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Hobgoblin Gunner",
+			"shortName": "Hobgoblin",
+			"source": "Starfall",
+			"page": 186,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"tactical vest"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 33",
+				"average": 82
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 11,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"athletics": "+8",
+				"medicine": "+4",
+				"perception": "+7",
+				"stealth": "+5",
+				"survival": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Inspiring Presence",
+					"entries": [
+						"Allies within 30 feet of the hobgoblin which can see it gain its Disciplined trait."
+					]
+				},
+				{
+					"name": "Disciplined",
+					"entries": [
+						"The hobgoblin has advantage on saving throws against being {@condition frightened} or {@condition charmed}."
+					]
+				},
+				{
+					"name": "Camouflage Armor",
+					"entries": [
+						"Wisdom (Perception) checks to detect the goblin that rely on sight have disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hobgoblin makes three weapon attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing or slashing damage."
+					]
+				},
+				{
+					"name": "Machine Gun",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 110/400 ft., one target. {@h}11 ({@damage 3d4 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Machine Gun (wild spray)",
+					"entries": [
+						"Each creature in a 110 foot cone must make a Dexterity saving throw ({@dc 14}). On a failed save, a creature takes half of 11 ({@damage 3d4 + 4}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Hobgoblin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"War horns sound, stones fly from catapults, and the thunder of a thousand booted feet echoes across the land as hobgoblins march to battle. Across the borderlands of civilization, settlements and settlers must contend with these aggressive humanoids, whose thirst for conquest is never satisfied.",
+									"Hobgoblins have dark orange or red-orange skin, and hair ranging from dark red-brown to dark gray. Yellow or dark brown eyes peer out beneath their beetling brows, and their wide mouths sport sharp and yellowed teeth. A male hobgoblin might have a large blue or red nose, which symbolizes virility and power among goblinkin. Hobgoblins can live as long as humans, though their love of warfare and battle means that few do.",
+									{
+										"name": "Goblinoids",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins belong to a family of creatures called goblinoids. They are often found lording over their cousins, the smaller goblins and the ferocious bugbears."
+										]
+									},
+									{
+										"name": "Martial Might",
+										"type": "entries",
+										"entries": [
+											"A hobgoblin measures virtue by physical strength and martial prowess, caring about nothing except the opportunity to demonstrate skill and cunning in battle. Hobgoblins of high military rank attain their positions by force, then hold those positions by imposing their authority through draconian measures.",
+											"Hobgoblins train to fight with a variety of weapons, and have great skill at crafting arms, armor, siege engines, and other military devices. Organized and disciplined, they take exceptional care of their weapons, armor, and personal possessions. They favor the bold colors associated with their tribes, and trim their often-elaborate uniforms with blood-red piping and leather dyed black."
+										]
+									},
+									{
+										"name": "Military Legions",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins organize themselves into tribal bands known as legions. In their martial society, every hobgoblin has a rank, from the powerful leaders and champions, to the rank-and-file foot soldiers, to the goblins that find themselves driven into the front lines at spear point. A legion is headed by a warlord with several captains serving under its command. A hobgoblin warlord is a ruthless tyrant more interested in strategy, victory, glory, reputation, and dominion than leading troops into battle.",
+											"As loyal and disciplined as hobgoblins are in their own legion, rival legions compete constantly for reputation and status. Meetings between legions erupt in violence if troops aren't restrained, and only exceptionally powerful leaders can force legions to cooperate on the battlefield."
+										]
+									},
+									{
+										"name": "Strategic Thinkers",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins have a strong grasp of tactics and discipline, and can carry out sophisticated battle plans under the direction of a strategically minded leader. However, they hate elves and attack them first in battle over any other opponents, even if doing so would be a tactical error.",
+											"Legions often supplement their ranks with less reliable and more expendable troops, including goblins, bugbears, orcs, evil humans, ogres, and giants."
+										]
+									},
+									{
+										"name": "Beast Trainers",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins have a long history of training animals to service. Like the more civilized races, they use oxen and horses to transport goods and weaponry over long distances. They communicate with each other using trained ravens, and keep vicious wolves to guard prisoners and protect hobgoblin camps. Hobgoblin cavalry use trained worgs as steeds, in the same way that goblins ride wolves. Some tribes even keep carnivorous apes as fighting beasts."
+										]
+									},
+									{
+										"name": "Conquer and Control",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins claim lands with abundant resources, and they can be found in forests and mountains, near mines and humanoid settlements, and anywhere else that wood, metal, and potential slaves can be found. They build and conquer strongholds in strategically advantageous locations, which they then use as staging areas to expand their territory.",
+											"Hobgoblin warlords never tire of combat, but they don't take up arms lightly. Before they attack, hobgoblins conduct thorough reconnaissance to gauge the strengths and weaknesses of their foes. When assaulting a stronghold, they surround it first to cut off escape routes and supply lines, then slowly starve their enemies out.",
+											"Hobgoblins fortify their own holdings, bolstering existing defenses with innovations of their own. Whether they lair in cavern complexes, dungeons, ruins, or forests, they protect their strongholds with ditches, fences, gates, guard towers, pit traps, and crude catapults or ballistas."
+										]
+									},
+									{
+										"name": "Legion of Maglubiyet",
+										"type": "entries",
+										"entries": [
+											"Hobgoblins worship Maglubiyet the Mighty One, the greater god of goblinoids. As terrifying as this figure is, hobgoblins don't fear death, believing that when they die in battle, their spirits join the honored ranks of Maglubiyet's army on the plane of Acheron."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Hobgoblin.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Hobgoblin.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hobgoblin.mp3?v=1.125.1"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Orc Ragegunner",
+			"shortName": "orc",
+			"source": "Starfall",
+			"page": 246,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "12d8 + 48",
+				"average": 102
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 18,
+			"int": 7,
+			"wis": 13,
+			"cha": 16,
+			"skill": {
+				"intimidation": "+9",
+				"athletics": "+11",
+				"survival": "+4",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"languages": [
+				"Common",
+				"Orc"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Intimidating Charge",
+					"entries": [
+						"At the end of a turn the orc used its aggressive trait, each creature it attacked or forced to make a Dexterity save that turn must make a Wisdom saving throw ({@dc 14}) or be {@condition frightened} until the end of the orc's next turn. A creature the orc damaged this turn has disadvantage on this save."
+					]
+				},
+				{
+					"name": "Mindless Rage",
+					"entries": [
+						"The orc has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Melee Gunner",
+					"entries": [
+						"Being in melee range does not impose disadvantage on the orc's ranged attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The orc makes three weapon attacks."
+					]
+				},
+				{
+					"name": "Machine Gun (never mounted)",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 110/400 ft., one target. {@h}12 ({@damage 3d4 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Machine Gun (wild spray)",
+					"entries": [
+						"Each creature in a 110 foot cone must make a Dexterity saving throw ({@dc 13}). On a failed save, a creature takes half of 12 ({@damage 3d4 + 5}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Orc",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Orcs are savage raiders and pillagers with stooped postures, low foreheads, and piggish faces with prominent lower canines that resemble tusks.",
+									{
+										"name": "Gruumsh One-Eye",
+										"entries": [
+											" Orcs worship Gruumsh, the mightiest of the orc deities and their creator. The orcs believe that in ancient days, the gods gathered to divide the world among their followers. When Gruumsh claimed the mountains, he learned they had been taken by the dwarves. He laid claim to the forests, but those had been settled by the elves. Each place that Gruumsh wanted had already been claimed. The other gods laughed at Gruumsh, but he responded with a furious bellow. Grasping his mighty spear, he laid waste to the mountains, set the forests aflame, and carved great furrows in the fields. Such was the role of the orcs, he proclaimed, to take and destroy all that the other races would deny them. To this day, the orcs wage an endless war on humans, elves, dwarves, and other folk.",
+											"Orcs hold a particular hatred for elves. The elven god Corellon Larethian half-blinded Gruumsh with a well-placed arrow to the orc god's eye. Since then, the orcs have taken particular joy in slaughtering elves. Turning his injury into a baleful gift, Gruumsh grants divine might to any champion who willingly plucks out one of its eyes in his honor."
+										],
+										"type": "entries"
+									},
+									{
+										"type": "entries",
+										"name": "Tribes like Plagues",
+										"entries": [
+											"Orcs gather in tribes that exert their dominance and satisfy their bloodlust by plundering villages, devouring or driving off roaming herds, and slaying any humanoids that stand against them. After savaging a settlement, orcs pick it clean of wealth and items usable in their own lands. They set the remains of villages and camps ablaze, then retreat whence they came, their bloodlust satisfied."
+										]
+									},
+									{
+										"name": "Ranging Scavengers",
+										"type": "entries",
+										"entries": [
+											"Their lust for slaughter demands that orcs dwell always within striking distance of new targets. As such, they seldom settle permanently, instead converting ruins, cavern complexes, and defeated foes' villages into fortified camps and strongholds. Orcs build only for defense, making no innovation or improvement to their lairs beyond mounting the severed body parts of their victims on spiked stockade walls or pikes jutting up from moats and trenches.",
+											"When an existing territory is depleted of food, an orc tribe divides into roving bands that scout for choice hunting grounds. When each party returns, it brings back trophies and news of targets ripe for attack, the richest of which is chosen. The tribe then sets out en masse to carve a bloody path to its new territory.",
+											"On rare occasions, a tribe's leader chooses to hold onto a particularly defensible lair for decades. The orcs of such a tribe must range far across the countryside to sate their appetites."
+										]
+									},
+									{
+										"name": "Leadership and Might",
+										"type": "entries",
+										"entries": [
+											"Orc tribes are mostly patriarchal, flaunting such vivid or grotesque titles as Many-Arrows, Screaming Eye, and Elf Ripper. Occasionally, a powerful war chief unites scattered orc tribes into a single rampaging horde, which runs roughshod over other orc tribes and humanoid settlements from a position of overwhelming strength.",
+											"Strength and power are the greatest of orcish virtues, and orcs embrace all manner of mighty creatures in their tribes. Rejecting notions of racial purity, they proudly welcome ogres, trolls, half-orcs, and orogs into their ranks. As well, orcs respect and fear the size and power of evil giants, and often serve them as guards and soldiers."
+										]
+									},
+									{
+										"name": "Orc Crossbreeds",
+										"type": "entries",
+										"entries": [
+											"Luthic, the orc goddess of fertility and wife of Gruumsh, demands that orcs procreate often and indiscriminately so that orc hordes swell generation after generation. The orcs' drive to reproduce runs stronger than any other humanoid race, and they readily crossbreed with other races. When an orc procreates with a non-orc humanoid of similar size and stature (such as a human or a dwarf), the resulting child is either an orc or a half-orc. When an orc produces young with an ogre, the child is a half-ogre of intimidating strength and brutish features called an ogrillon."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Orc.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Orc.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/orc.mp3?v=1.125.1"
+			},
+			"altArt": [
+				{
+					"name": "Iceshield Orc",
+					"source": "PotA"
+				}
+			],
+			"traitTags": [
+				"Aggressive"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Returned Soldier",
+			"source": "Starfall",
+			"page": 345,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"stellar uniform",
+						"shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8 + 1d4 + 4",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 15,
+			"save": {
+				"dex": "+3",
+				"wis": "+3",
+				"cha": "+4"
+			},
+			"skill": {
+				"stealth": "+3",
+				"arcana": "+2",
+				"history": "+2",
+				"perception": "+3",
+				"religion": "+2",
+				"medicine": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The warlock is an 2nd-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 12}, +4 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell dancing lights}",
+								"{@spell eldritch blast}",
+								"{@spell light}",
+								"{@spell sacred flame}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell expeditious retreat}",
+								"{@spell guiding bolt}",
+								"{@spell hex}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"will": [
+						"{@spell false life}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Stellar Uniform",
+					"entries": [
+						"Creatures have disadvantage on Wisdom (Perception) checks to see the returned."
+					]
+				},
+				{
+					"name": "Stellar Knife",
+					"entries": [
+						"When hitting a target with the stellar knife, the returned can make another attack with the knife's shadow.",
+						"Alternatively, once per day, the returned can deal an additional 10 ({@damage 3d6}) radiant damage and force the target to make a Mythic saving throw ({@dc 12}). On a failed save, the target is {@condition stunned} until the start of the returned's next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Stellar Knife",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing-radiant or slashing-radiant damage."
+					]
+				},
+				{
+					"name": "Stellar Knife Shadow",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing-psychic or slashing-psychic damage."
+					]
+				},
+				{
+					"name": "Eldritch Blast (far)",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 600 ft., one target. {@h}7 ({@damage 1d10 + 2}) force damage."
+					]
+				},
+				{
+					"name": "Eldritch Blast (close)",
+					"entries": [
+						"{@atk rs} {@hit 4} to hit, range 120 ft., one target. {@h}7 ({@damage 1d10 + 2}) force damage, plus 2 ({@damage 1d4}) radiant damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Healing Light (3/long rest)",
+					"entries": [
+						"A creature the returned can see within 60 feet of it heals 5 ({@dice 1d6 + 2}) hit points."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"urban"
+			],
+			"fluff": {
+				"name": "Commoner",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits."
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Commoner.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/commoner.mp3?v=1.125.1"
+			},
+			"altArt": [
+				{
+					"name": "Vistana Commoner",
+					"source": "CoS"
+				},
+				{
+					"name": "Commoner",
+					"source": "EGW"
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"hasFluff": true
 		}
 	]
 }
