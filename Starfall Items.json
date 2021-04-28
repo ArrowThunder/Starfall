@@ -1,0 +1,121 @@
+{
+	"siteVersion": "1.126.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Starfall Items",
+				"abbreviation": "SFI",
+				"full": "Starfall",
+				"url": "",
+				"authors": [
+					"ArrowThunder"
+				],
+				"convertedBy": [
+					"ArrowThunder"
+				]
+			}
+		],
+		"dateAdded": 1618318824,
+		"dateLastModified": 1618318824
+	},
+	"item": [
+		{
+			"name": "Sword of Kas (Starfall)",
+			"source": "DMG",
+			"page": 123,
+			"baseItem": "longsword|phb",
+			"type": "M",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"sentient": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+3",
+			"entries": [
+				"Major spoilers in this lore entry, do not allow players to see!",
+				"Before Dr. Vance became a lich, he spent many years researching undeath in the hopes of unlocking a means of immortality. One of his earliest attempts at creating a phylactery was the creation of a sword. The haft is carved of the bones of a powerful Storm Giant. The blade is made of a black iron, and is inscribed with strange runes and sigils. A creature familiar with Infernal scripts can attempt a DC 30 Investigation check to decipher the words, which read: \"In death, life\".",
+				"Dr. Vance modeled the blade after Kas, the Vampire. It was designed to convert blood into Shadow, in the hopes that it would thereby make for a perfect phylactery. However, Vecna stored only a fragment of his soul into it, and the sword was corrupted by other influences.",
+				"The Sword of Kas is a magic, sentient longsword that grants a +3 bonus to attack and damage rolls made with it. It scores a critical hit on a roll of 19 or 20. The sword deals an additional 1d10 slashing damage against humanoids, which reduces their hit point maximum by that amount until they finish a long rest",
+				"If the sword isn't bathed in blood within 1 minute of being drawn from its scabbard, its wielder must make a DC 15 Charisma saving throw. On a successful save, the wielder takes {@dice 3d6} psychic damage. On a failed save, the wielder is dominated by the sword, as if by the {@spell dominate monster} spell, and the sword demands that it be bathed in blood. The spell effect ends when the sword's demand is met.",
+				{
+					"name": "Random Properties",
+					"type": "entries",
+					"entries": [
+						"The Sword of Kas has the following random properties:"
+					]
+				},
+				{
+					"type": "list",
+					"items": [
+						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property} (immunity to charmed or frightened)",
+						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property} (able to cast {@spell wind walk})",
+						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property} (While attuned to the artifact, all holy water within 10 feet of you is destroyed.)",
+						"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property} (Before using one of the artifact's properties as an action, you must use a bonus action to draw blood, either from yourself or from a willing or incapacitated creature within your reach, using a piercing or slashing melee weapon. The subject takes {@dice 1d4} damage of the appropriate type)."
+					]
+				},
+				{
+					"name": "Spirit of Kas",
+					"type": "entries",
+					"entries": [
+						"While the sword is on your person, you add a {@dice d10} to your initiative at the start of every combat. In addition, when you use an action to attack with the sword, you can transfer some or all of its attack bonus to your Armor Class instead. The adjusted bonuses remain in effect until the start of your next turn."
+					]
+				},
+				{
+					"name": "Spells",
+					"type": "entries",
+					"entries": [
+						"While the sword is on your person, you can use an action to cast one of the following spells (save 18) from it: {@spell call lightning}, {@spell divine word}, or {@spell finger of death}. Once you use the sword to cast a spell, you can't cast that spell again from it until the next dawn."
+					]
+				},
+				{
+					"name": "Vampiric Origins",
+					"type": "entries",
+					"entries": [
+						"The sword can cast {@spell control weather} at will. It decides when to cast it for you, and maintains concentration on it so you don't have to.",
+						"If you take a misty form as per a vampire's shapechanger trait, the {@spell gaseous form} spell, the {@spell wind walk} spell, or the like, the sword becomes mist with you. When it does, it creates a magical sphere of fog with a 20 foot radius that roughly follows you as you move. The fog heavily obscures the area, and provides advantage on saving throws against spells and magical abilities. A living creature which ends its turn in the fog takes {@dice 1d10} slashing damage. The target's hit point maximum is reduced by the damage dealt, and the reduction lasts until the creature finishes a long rest."
+					]
+				},
+				{
+					"name": "Sentience",
+					"type": "entries",
+					"entries": [
+						"Vecna's Sword is a sentient anarchist, privatist, void-seeking weapon with an Intelligence of 15, a Wisdom of 13, and a Charisma of 16. It has hearing and {@sense darkvision} out to a range of 120 feet.",
+						"The weapon communicates telepathically with its wielder and can speak, read, and understand Common"
+					]
+				},
+				{
+					"name": "Personality",
+					"type": "entries",
+					"entries": [
+						"The Mind of the sword is a fragment of Vecna's, the Body of the sword is of both a Storm Giant and Vampiric Metal, the Name of the sword is of Kas, and the Shadow of the sword is of the Murk.",
+						"The sword, believing itself to be incomplete, seeks to become a complete phylactery of Vecna."
+					]
+				},
+				{
+					"name": "Destroying the Sword",
+					"type": "entries",
+					"entries": [
+						"A creature attuned to both the {@item Eye of Vecna} and the {@item Hand of Vecna} can use the wish property of those combined artifacts to unmake the Sword of Kas. The creature must cast the {@spell wish} spell and make a Charisma check contested by the Charisma check of the sword. The sword must be within 30 feet of the creature, or the spell fails. If the sword wins the contest, nothing happens, and the {@spell wish} spell is wasted. If the sword loses the contest, it is destroyed."
+					]
+				}
+			],
+			"attachedSpells": [
+				"wish",
+				"control weather",
+				"wind walk",
+				"gaseous form",
+				"fog cloud",
+				"call lightning",
+				"divine word",
+				"finger of death"
+			],
+			"hasFluffImages": true
+		}
+	]
+}
