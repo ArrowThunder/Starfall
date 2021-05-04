@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1620168294,
-		"dateLastModified": 1620168294
+		"dateAdded": 1620171622,
+		"dateLastModified": 1620171622
 	},
 	"monster": [
 		{
@@ -5584,7 +5584,8 @@
 					"from": [
 						"mage armor",
 						"shield"
-					]
+					],
+					"braces": true
 				}
 			],
 			"hp": {
@@ -5714,8 +5715,6 @@
 				}
 			],
 			"fluff": {
-				"name": "Deva",
-				"source": "MM",
 				"entries": [
 					{
 						"type": "entries",
@@ -5728,16 +5727,17 @@
 										"name": "Shards of the Divine",
 										"type": "entries",
 										"entries": [
-											"Angels are formed from the astral essence of benevolent gods and are thus divine beings of great power and foresight.",
-											"Angels act out the will of their gods with tireless devotion. Even chaotic good deities command lawful good angels, knowing that the angels' dedication to order best allows them to fulfill divine commands. An angel follows a single driving purpose, as decreed by its deity. However, an angel is incapable of following commands that stray from the path of law and good.",
-											"An angel slays evil creatures without remorse. As the embodiment of law and good, an angel is almost never mistaken in its judgments. This quality can create a sense of superiority in an angel, a sense that comes to the fore when an angel's task conflicts with the goals of another creature. The angel never acquiesces or gives way. When an angel is sent to aid mortals, it is sent not to serve but to command. The gods of good therefore send their angels among mortals only in response to the most dire circumstances."
+											"Angels are born from the Dawn. They are all fragments of a vast divinity, and make their home in the citadels of Nova Celest. Rulers of the skies and stars, their every act is guided by the hands of fate itself. They are born of the divine joining of fates, and they are raised in the intense citadels of Nova Celest.",
+											"As a result of their origins, angels tend to be monolithic in their beliefs, moreso than any other outsider group. They are authoritarian, following above all else the strict hierarchy of the Celestial Host. They are collectivist, seeking to better Nova Celest, and all civilizations, with their every action. They believe everyone should be willing to sacrifice their personal needs for the good of the community. They are also Astralist in nature and outlook, having deep ties to Mythic power and worshipping the Aeon of Celest.",
+											"Angels are not all mirror images of each other. On the contrary, they are diverse, each being unique and holding individuality. They are not unerring or unwavering in their morality, as much as they may believe themselves to be. Sometimes personal zealotry and experiences can lead them astray, causing them to \"fall\" in the eyes of the greater host."
 										]
 									},
 									{
-										"name": "Fallen Angels",
+										"name": "Celestial Host",
 										"type": "entries",
 										"entries": [
-											"An angel's moral compass grants it a sense of infallibility that can sometimes spell its undoing. Angels are usually too wise to fall for a simple deception, but sometimes pride can lead one to commit an evil act. Whether intentional or accidental, such an act is a permanent stain that marks the angel as an outcast. Fallen angels retain their power but lose their connection to the deities from which they were made. Most fallen angels take their banishment personally, rebelling against the powers they served by seeking rulership over a section of the Abyss or a place among other fallen in the hierarchy of the Nine Hells. Zariel, the ruler of the first layer of the Nine Hells, is such a creature. Rather than rebel, some fallen angels resign themselves to an isolated existence on the Material Plane, living in disguise as simple hermits. If they are redeemed, they can become powerful allies dedicated to justice and compassionate service."
+											"The Celestial Host is the marching force of Nova Celest. When manifesting in a world, angels take physical forms structured by their divine tier, which are also indicated by their wing and arm number. The level of divinity they manifest as follows the Fibonacci sequence, although the \"true form\" of an angel in Nova Celest may be much more powerful.",
+											"At the 1st tier of divinity, there are the celestial beasts and the oracles. The 2nd tier divinities are the Austeres, who lack wings but not ability. The 3rd tier divinities are the legates, with two wings and arms. 5th tier divinities are the Cherubs, with four wings, faces, and arms. At the 8th tier lies the Seraphs, the powerful, six-winged, six-armed warriors of holy fire. At the 13th tier lies the Princeps, the archangels of the divine capable of using eight wings and eight arms."
 										]
 									},
 									{
@@ -5749,10 +5749,9 @@
 									},
 									{
 										"type": "entries",
-										"name": "Deva",
+										"name": "Legates",
 										"entries": [
-											"Devas are angels that act as divine messengers or agents to the Material Plane, the Shadowfell, and the Feywild and that can assume a form appropriate to the realm they are sent to.",
-											"Legend tells of angels that take mortal form for years, lending aid, hope, and courage to goodhearted folk. A deva can take any shape, although it prefers to appear to mortals as an innocuous humanoid or animal. When circumstances require that it cast off its guise, a deva is a beautiful humanoid-like creature with silvery skin. Its hair and eyes gleam with an unearthly luster, and large feathery wings unfurl from its shoulder blades."
+											"Legates are angels that act as divine messengers and heralds. One might expect that their role as messengers would be somewhat obsolete due to pockets, but they deliver physical objects and people, as well as information to those who don't have pockets. They also act as scribes, secretaries, and liaisons for higher-ranked celestials, handling information for them."
 										]
 									}
 								]
@@ -5764,17 +5763,13 @@
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Deva.jpg"
+							"type": "external",
+							"url": "https://i.imgur.com/DH2kkkf.jpg"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://5e.tools/img/MM/Deva.png?v=1.127.2",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/deva.mp3?v=1.127.2"
-			},
+			"tokenUrl": "https://i.imgur.com/ebIxmGq.png",
 			"traitTags": [
 				"Magic Resistance"
 			],
