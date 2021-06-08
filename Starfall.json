@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.127.3",
+	"siteVersion": "1.130.1",
 	"_meta": {
 		"sources": [
 			{
@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1620171622,
-		"dateLastModified": 1620171622
+		"dateAdded": 1623191629,
+		"dateLastModified": 1623191629
 	},
 	"monster": [
 		{
@@ -4702,7 +4702,7 @@
 			],
 			"ac": [
 				{
-					"ac": 20,
+					"ac": 18,
 					"from": [
 						"Robe of the Archlich"
 					]
@@ -4776,7 +4776,7 @@
 				}
 			],
 			"languages": [
-				"Common plus up to five other languages"
+				"Understands all languages but can only speak Common"
 			],
 			"cr": "22",
 			"spellcasting": [
@@ -4875,16 +4875,12 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Vecna is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 24}, {@hit 16} to hit with spell attacks). Vecna has the following warlock spells prepared:"
-					],
-					"will": [
-						"{@spell detect magic}",
-						"{@spell mage armor}"
+						"Vecna is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 24}, {@hit 16} to hit with spell attacks). Vecna has the following warlock spells prepared:"
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell eldritch blast} (agonizing blast)",
+								"{@spell eldritch blast}",
 								"{@spell infestation|XGE}",
 								"{@spell minor illusion}"
 							]
@@ -4901,7 +4897,7 @@
 							"lower": 1
 						}
 					},
-					"ability": "int",
+					"ability": "cha",
 					"type": "spellcasting"
 				}
 			],
@@ -4960,7 +4956,14 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Vecna regains 10 hit points at the start of his turn if he has at least 1 hit point."
+						"Vecna regains 10 hit points at the start of his turn if he has at least 1 hit point.",
+						"If Vecna drops to 93 hit points or fewer, his {@spell contingency} goes off, and {@spell negative energy flood|xge} provides him with {@dice 5d12 / 2} temporary hit points."
+					]
+				},
+				{
+					"name": "Eldritch Mind",
+					"entries": [
+						"Vecna has advantage on Constitution saving throws to maintain concentration."
 					]
 				}
 			],
@@ -5142,7 +5145,7 @@
 			],
 			"languageTags": [
 				"C",
-				"X"
+				"XX"
 			],
 			"damageTags": [
 				"C",
@@ -5796,6 +5799,509 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Fathomless, the Insatiable Eterntiy",
+			"shortName": "Fathomless",
+			"source": "Starfall",
+			"size": "G",
+			"type": "aberration",
+			"alignment": [
+				{
+					"special": "anarchist privatist astralist"
+				}
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d20 + 144",
+				"average": 312
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 80
+			},
+			"str": 27,
+			"dex": 12,
+			"con": 29,
+			"int": 25,
+			"wis": 21,
+			"cha": 18,
+			"save": {
+				"int": "+14",
+				"wis": "+12",
+				"dex": "+8",
+				"str": "+15",
+				"con": "+16"
+			},
+			"skill": {
+				"arcana": "+21",
+				"history": "+14",
+				"perception": "+12"
+			},
+			"senses": [
+				"blindsight 120 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 22,
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"cold",
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmythic sources"
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"fire",
+						"thunder"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"languages": [
+				"all",
+				"telepathy 1 mile"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Demiplanar Donjon",
+					"entries": [
+						"Any creature or object that the fathomless swallows is transported to a demiplane that can be entered by no other means except a wish spell or this creature's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles an infinite chasm with sideways gravity, with a ceiling 100 feet high and. Like a stomach, it contains the remains of the Fathomless's past meals.",
+						"The fathomless can't be harmed from within the demiplane. If the fathomless dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible."
+					]
+				},
+				{
+					"name": "Mythical",
+					"entries": [
+						"Although the fathomless lacks a mythic tier, its very existence is the stuff of legends. Its attacks are considered magical and mythic. It can use its Constitution save instead of a Mythic Save."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The fathomless deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "One with the Sea",
+					"entries": [
+						"The fathomless can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing. It can sense and attack from any spaces which are difficult terrain due to the effects of its abilities."
+					]
+				},
+				{
+					"name": "Bottomless Void (Mythic Trait; Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the fathomless reaches 0 hit points while submerged, it doesn't die. Instead, it gains a flying (hover) speed equal to its swim speed. Its physical form begins to unravel, and it regains all of its hit points and recharges all abilities. The ongoing effects of any of its abilities creating difficult terrain end. Its Mawlstrom ability changes in the following ways:",
+						"It no longer requires being submerged in water. There is no vortex, and the maelstrom is a 100 foot-radius sphere centered on the fathomless. The maelstrom moves with the fathomless. It can render creatures airborne, and creatures within the maelstrom do not experience gravity. The maelstrom does not diminish, but instead its radius grows by 100 feet at the start of each of the fathomless's turns, to a maximum of 1 mile. The maelstrom ends after 1 hour."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fathomless makes up to three tentacle attacks, but it must choose different targets for each attack."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 30 ft., one target. {@h}17 ({@damage 2d8 + 8}) damage. The fathomless can move the target up to 10 feet in any direction."
+					]
+				},
+				{
+					"name": "Devour",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h} 25 ({@damage 7d4 + 8}) piercing damage. If the target is {@condition frightened} of the fathomless, it deals an additional 26 ({@damage 4d12}) psychic damage. The fathomless regains hit points equal to half the psychic damage dealt. If the target is a creature of Huge size or smaller and this damage reduces it to 0 hit points or it is {@condition incapacitated}, the fathomless swallows it, sending it to the demiplanar donjon."
+					]
+				},
+				{
+					"name": "Mawlstrom {@recharge}",
+					"entries": [
+						"While submerged in at least 1000 feet of water, the fathomless magically creates a terrible whirlpool pulling deep into the abyss, centered on itself. The maelstrom is from 20 to 100 feet wide at the base, and up to 1000 feet wide at the top, with a depth proportional to a quarter of its top diameter. The turbulent and violent waters extend downward with a thickness equal to twice the base diameter. A cylindrical vortex stretches from the base of the maelstrom to unseen depths. Both the maelstrom and the vortex are difficult terrain, and heavily obscured.",
+						"When the maelstrom is formed, and again at the start of each of the fathomless's turns, each creature in the water and within 500 feet of the maelstrom must make a {@dc 24} Strength saving throw. A creature moves 100 feet closer to vortex, or half as far on a successful save. A creature can swim away from the vortex by succeeding on a {@dc 24} Strength (Athletics) check.",
+						"When a creature enters the maelstrom for the first time on a turn or ends its turn there, it must make a {@dc 24} Strength saving throw. A creature takes 22 ({@damage 5d8}) bludgeoning damage, 15 ({@damage 6d4}) slashing damage, or half damage on a successful save.",
+						"When a creature enters the vortex for the first time on its turn or starts its turn there is immediately moved 500 feet downwards (as if falling) and makes a {@dc 21} Dexterity save. On a failed save, the creature takes 45 ({@damage 10d8}) bludgeoning damage and 18 ({@damage 4d8}) acid damage, and is {@condition restrained} until the start of their next turn. On a successful save, the creature takes half damage and is ejected from the vortex.",
+						"At the start of the fathomless's turn the width of the top of the maelstrom decreases by 100 feet and the width of the base decreases by 10 feet. For every 100 feet the maelstrom has contracted horizontally, its bludgeoning damage decreases by {@dice 1d8} and the vortex's bludgeoning damage decreases by {@dice 2d8}. When the base is 20 feet or less in diameter, the effects subside."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Spatial Expansion",
+					"entries": [
+						"The fathomless expands the space between itself and everything else. All creatures, objects, and magical effects move 50 feet away from its current location."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"The fathomless makes one attack with its tentacles against a creature it hasn't targeted with a tentacle attack since the end of the fathomless's last turn."
+					]
+				},
+				{
+					"name": "Consumptive Despair",
+					"entries": [
+						"The fathomless chooses one creature within difficult terrain of its creation. That creature must make a {@dc 22} Intelligence save as it glimpses eternity. On a failed save, a creature takes 13 ({@damage 2d12}) psychic damage and is {@condition frightened} for 1 minute. While {@condition frightened} in this way, a creature is {@condition blinded} and {@condition deafened} to its surroundings. A {@condition frightened} creature can repeat the save at the end of each of its turns. If a target's saving throw is successful or the effect ends for it, the target is immune to consumptive despair for the next 24 hours."
+					]
+				},
+				{
+					"name": "Rend Reality (Costs 3 Actions)",
+					"entries": [
+						"A 30-foot radius sphere erupts from a point the fathomless can see within 120 feet of it. Each creature and object within the sphere must make a {@dc 22} Constitution saving throw, taking 16 ({@damage 3d10}) force damage on a failed save, or half as much on a successful one. Each spell or magical effect of the fathomless's choice within the sphere ends."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If Fathomless's mythic trait is active, it can use the options below as legendary actions for 1 hour after using Bottomless Void."
+			],
+			"mythic": [
+				{
+					"name": "True Despair (Costs 2 Actions)",
+					"entries": [
+						"The fathomless chooses one creature it can see that can see its maelstrom. That creature must make a {@dc 22} Intelligence save. On a failed save, a creature takes 26 ({@damage 4d12}) psychic damage and is {@condition frightened} for 1 minute. While {@condition frightened} in this way, a creature is {@condition blinded} and {@condition deafened} to its surroundings. A {@condition frightened} creature can repeat the save at the end of each of its turns."
+					]
+				},
+				{
+					"name": "Unearthly Bile (Costs 3 Actions)",
+					"entries": [
+						"The fathomless expels bile that splashes all creatures in a 30-foot-radius sphere centered on a point within 120 feet of the emissary. Each creature in that area must make a {@dc 22} Dexterity saving throw, taking 18 ({@damage 8d8}) acid damage on a failed save, or half as much damage on a successful one. For each creature that fails the saving throw, a gibbering mouther (see its entry in the Monster Manual) appears in an unoccupied space on a surface that can support it within 30 feet of that creature. The gibbering mouthers act right after the fathomless on the same initiative count, gaining a +7 bonus to their attack and damage rolls, and fighting until they are destroyed. They disappear when the fathomless dies."
+					]
+				}
+			],
+			"variant": [
+				{
+					"name": "Near Shore",
+					"entries": [
+						"The fathomless occasionally has reason to appear nearer to shore than it might have otherwise. In such a case, it gains the following action, which shares its recharge with Mawlstrom:",
+						{
+							"type": "entries",
+							"name": "Tsunamaw (Recharge 6)",
+							"entries": [
+								"While fully submerged in no more than 1000 feet of water, the fathomless magically creates a wall of water-made-mouths centered on itself. The wall is up to 1 mile long, up to 250 feet high, and up to 500 feet thick. When the wall appears, all other creatures within its area must each make a {@dc 24} Strength saving throw. A creature takes 27 ({@damage 5d10}) bludgeoning damage and 15 ({@damage 6d4}) piercing damage on failed save, or half as much damage on a successful one.",
+								"At the start of each of the fathomless's turns after the wall appears, the wall, along with any other creatures in it, moves 500 feet away from the fathomless. Any Huge or smaller creature inside the wall or whose space the wall enters when it moves must succeed on a {@dc 24} Strength saving throw. A creature takes 27 ({@damage 5d10}) bludgeoning damage and 15 ({@damage 6d4}) piercing damage, or half as much on a successful one. At the end of each turn the wall moves, the wall's height is reduced by 25 feet. If the wall passes over raised terrain, this lowers the wave height once the wall is over it. For every 50 feet below the original 250 foot height, the wave deals {@dice 1d10} less bludgeoning damage. When the wall reaches 0 feet in height, the effect ends.",
+								"The wall is difficult terrain, and significantly impedes movement. A creature caught in the wall can move by swimming. Because of the force of the wave, though, the creature must make a successful {@dc 24} Strength (Athletics) check to swim at all during that turn. The wall also heavily obscures the area."
+							]
+						}
+					],
+					"type": "variant"
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"fluff": {
+				"entries": [
+					"The fathomless is just the physical manifestation of a far less corporeal, primordial, conceptual entity. The Fathomless is the living entity embodying the endless void, and the bottomless despair that accompanies it.",
+					"The fathomless doesn't require air, food, drink, or sleep.",
+					"Defeating the fathomless does not permanently ensure its demise, but rather causes it to retreat from its mortal coil for the time being.",
+					"The demiplanar donjon appears to be a horizontal ocean chasm roughly 100 feet wide. Space within the donjon exhibits both toroidal and hyperbolic properties, meaning it is incredibly easy to get lost and it can seem infinite in every horizontal direction."
+				]
+			},
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"B",
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"O",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened",
+				"frightened",
+				"incapacitated",
+				"restrained"
+			]
+		},
+		{
+			"name": "Fathomless, the Insatiable Eterntiy",
+			"shortName": "Fathomless",
+			"source": "Starfall",
+			"size": "G",
+			"type": "aberration",
+			"alignment": [
+				{
+					"special": "anarchist privatist astralist"
+				}
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d20 + 231",
+				"average": 451
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true,
+				"swim": 80
+			},
+			"str": 27,
+			"dex": 12,
+			"con": 33,
+			"int": 25,
+			"wis": 21,
+			"cha": 18,
+			"save": {
+				"int": "+14",
+				"wis": "+12",
+				"dex": "+8",
+				"str": "+15"
+			},
+			"skill": {
+				"arcana": "+21",
+				"history": "+14",
+				"perception": "+12"
+			},
+			"senses": [
+				"blindsight 120 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 22,
+			"resist": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"immune": [
+				{
+					"immune": [
+						"fire",
+						"thunder"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"languages": [
+				"all",
+				"telepathy 1 mile"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Demiplanar Donjon",
+					"entries": [
+						"Any creature or object that the fathomless swallows is transported to a demiplane that can be entered by no other means except a wish spell or this creature's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1,000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of the fathomless past meals.",
+						"The fathomless can't be harmed from within the demiplane. If the fathomless dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible."
+					]
+				},
+				{
+					"name": "Mythical",
+					"entries": [
+						"Although the fathomless lacks a mythic tier, its very existence is the stuff of legends. Its attacks are considered magical and mythical."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the fathomless fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The fathomless deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "One with the Sea",
+					"entries": [
+						"The fathomless can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing. Its attacks can reach anywhere that its abilities make difficult terrain."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The fathomless doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fathomless makes three tentacle attacks."
+					]
+				},
+				{
+					"name": "Tentacle Slam",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 30 ft., one target. {@h}14 ({@damage 1d12 + 8}) bludgeoning damage, and the target is moved 10 feet in a direction of the fathomless's choosing."
+					]
+				},
+				{
+					"name": "Devour",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target {@condition frightened} of the fathomless. {@h}20 ({@damage 8d4 + 8}) slashing damage, plus 26 ({@damage 4d12}) psychic damage. The target must make a {@dc 21} Charisma saving throw or be transported to the fathomless's demiplanar donjon."
+					]
+				},
+				{
+					"name": "Maestrom-Maw (Recharge 6) 53 damage/budget",
+					"entries": [
+						"While submerged in at least 250 feet of water, the fathomless magically creates a terrible whirlpool pulling deep into the abyss, centered on itself. The maelstrom is from 20 to 100 feet wide at the base, and up to 1000 feet wide at the top, with a depth of up to 250 feet. The maelstrom is difficult terrain. A cylindrical vortex stretches from the base of the maelstrom to a depth of up to five times the width of the top of the maelstrom.",
+						"When the maelstrom is formed, and again at the start of each of the fathomless's turns, each creature in the water and within 500 feet of the maelstrom must make a {@dc 24} Strength saving throw. A creature moves 100 feet closer to vortex, or half as far on a successful save. A creature can swim away from the vortex by succeeding on a {@dc 24} Strength (Athletics) check.",
+						"When a creature enters the maelstrom for the first time on a turn or ends its turn there, it must make a {@dc 24} Strength saving throw. A creature takes 22 ({@damage 5d8}) bludgeoning damage, 14 ({@damage 4d6}) piercing damage, or half damage on a successful save.",
+						"When a creature enters the vortex for the first time on its turn or starts its turn there is immediately moved 250 feet downwards and makes a {@dc 21} Dexterity save. On a failed save, the creature takes 35 ({@damage 10d6}) bludgeoning damage and 18 ({@damage 4d8}) acid damage, and is {@condition restrained} until the start of their next turn. On a successful save, the creature takes half damage and is ejected from the vortex.",
+						"At the start of the fathomless's turn, the depth of the maelstrom decreases by 50 feet (minimum 10 feet), and the width of the top of the maelstrom decreases by 100 feet. For every 100 feet the maelstrom has contracted horizontally, its bludgeoning damage decreases by {@dice 1d8} and the vortex's bludgeoning damage decreases by {@dice 2d6}. Once the maelstrom has a top width equal to twice the width of the base, the whirlpool subsides entirely."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Tentacle",
+					"entries": [
+						"The fathomless makes one attack with its tentacles."
+					]
+				},
+				{
+					"name": "Consumptive Despair",
+					"entries": [
+						"The fathomless chooses one creature within the wall of its tsunami-maw or within the maelstrom of its maelstrom-maw. That creature must make a {@dc 22} Intelligence save as it glimpses eternity. On a failed save, a creature takes 13 ({@damage 2d12}) psychic damage and is {@condition frightened} for 1 minute. While {@condition frightened} in this way, a creature is {@condition blinded} and {@condition deafened} to its surroundings. A {@condition frightened} creature can repeat the save at the end of each of its turns. If a target's saving throw is successful or the effect ends for it, the target is immune to consumptive despair for the next 24 hours."
+					]
+				}
+			],
+			"variant": [
+				{
+					"name": "Near Shore",
+					"entries": [
+						"The fathomless occasionally has reason to appear nearer to shore than it might have otherwise. In such a case, it gains the following action:"
+					],
+					"type": "variant"
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"fluff": {
+				"entries": [
+					"The fathomless is just the physical manifestation of a far less corporeal, primordial, conceptual entity. The Fathomless is the living entity embodying the endless void, and the bottomless despair that accompanies it.",
+					"Defeating the fathomless does not permanently ensure its demise, but rather causes it to retreat from its mortal coil for the time being."
+				]
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"B",
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened",
+				"frightened",
+				"restrained"
+			]
 		}
 	]
 }
