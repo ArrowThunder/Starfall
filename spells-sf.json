@@ -1,0 +1,435 @@
+{
+	"spell": [
+		{
+			"name": "Astral Projection - Starfall",
+			"source": "SF",
+			"page": 0,
+			"rarity": "Rare",
+			"level": 9,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"You and up to eight willing creatures within range project your astral bodies into the Astrofell (the spell fails and the casting is wasted if you are already on that plane). The material body you leave behind is {@condition unconscious}.",
+				"Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut-something that can happen only when an effect specifically states that it does, your astral body is destroyed and you awaken in your material body. Your material body immediately takes half of your hit point maximum as psychic damage.",
+				"Your astral form can freely travel through the Astrofell and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it.",
+				"The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens.",
+				"The spell might also end early for you or one of your companions. A successful {@spell dispel magic} spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. When the spell ends, the cord pulls the creature's astral form back to its body, waking it.",
+				"If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points."
+			],
+			"conditionInflict": [
+				"unconscious"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Monk",
+						"source": "PHB"
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Druid",
+						"source": "PHB",
+						"definedInSource": "SF"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mage Hand - Starfall",
+			"source": "SF",
+			"page": 0,
+			"rarity": "Common",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"An invisible, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.",
+				"You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.",
+				"The hand can't attack, activate magic items, or carry more than 10 pounds."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer (Revisited)",
+						"source": "UAArtificerRevisited"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Psychic Warrior (UA)",
+							"source": "UAFighterRogueWizard"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Psionics (UA)",
+							"source": "UAFighterRogueWizard"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Swarmkeeper",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger (Spell-less)",
+							"source": "UAModifyingClasses"
+						},
+						"subclass": {
+							"name": "Swarmkeeper",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger (Revised)",
+							"source": "UATheRangerRevised"
+						},
+						"subclass": {
+							"name": "Swarmkeeper",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Gith (Githyanki)",
+					"source": "UAEladrinAndGith",
+					"baseName": "Gith",
+					"baseSource": "UAEladrinAndGith"
+				},
+				{
+					"name": "Gith (Githzerai)",
+					"source": "UAEladrinAndGith",
+					"baseName": "Gith",
+					"baseSource": "UAEladrinAndGith"
+				},
+				{
+					"name": "Gith (Githyanki)",
+					"source": "MTF",
+					"baseName": "Gith",
+					"baseSource": "MTF"
+				},
+				{
+					"name": "Gith (Githzerai)",
+					"source": "MTF",
+					"baseName": "Gith",
+					"baseSource": "MTF"
+				},
+				{
+					"name": "Tiefling (Mammon)",
+					"source": "UAFiendishOptions",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Tiefling (Mephistopheles)",
+					"source": "UAFiendishOptions",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Tiefling (Mammon)",
+					"source": "MTF",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Tiefling (Mephistopheles)",
+					"source": "MTF",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Dimir Operative",
+					"source": "GGR"
+				}
+			]
+		},
+		{
+			"name": "Sacred Geas",
+			"source": "SF",
+			"page": 0,
+			"rarity": "Common",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You choose one willing creature that you must touch throughout the casting of the spell. The creature must be able to both speak and understand you throughout the casting of the spell. You bind the creatures to a sacred vow which they must strive to uphold. The nature of the vow is decided by you and the creature. The spell will serve to provide power to the target. A sacred geas can provide a wide range of benefits, from access to a specific spell to bonus ki points to powering the class features of a paladin or warlock. The spell also serves to enforce the terms of the geas.",
+				"When you cast this spell, you decide whether to impart your power to the creature or to let the spell power itself. If you choose to impart your power to the creature, the spell creates an artificial snapshot of your soul and splices it to the creature. The soul-splice telepathically communicates with target on your behalf, and can serve as a telepathic relay to you while you can see the creature. Additionally, the benefits conferred by the spell come from your own abilities (and may require you to expend some resources for them). The spell's consequence DC is your spellcasting DC when casting the spell in this way.",
+				"If you choose to let the spell power itself, the spell crystalizes the determination of the target into a source of power of its own. The benefits conferred by the spell serve to enhance and augment their own abilities. The spell's consequence DC is 8 + your proficiency bonus + the target's Charisma modifier.",
+				"When you cast this spell, you also decide the consequences conferred, choosing from one or more of the options below or deciding on your own. The greater the consequence, the stronger the benefits conferred. When the creature attempts to act in a matter contrary to the terms of the geas, they must make a Wisdom saving throw against the spell's consequence DC or fail. The target may choose to automatically fail this saving throw. On a success, the creature sufferes the predetermined consequence, and can neither gain the benefits of the spell nor suffer its consequences until they finish a night's rest. Unless otherwise stated, the effects of the consequence ends when the target finishes a night's rest and cannot be removed except by terminating the spell.",
+				{
+					"type": "list",
+					"items": [
+						"None - The benefits of the spell are lost but no other effects happen.",
+						"Shame - The target glows, projecting dim light in a 10 foot radius and projecting humiliating phrases in the space surrounding the target. While under this effect, the target has disadvantage on social checks as well as Stealth (Dexterity) checks to hide.",
+						"Remorse - The target feels deep guilt and regret in their choice. They gain the frightened condition for the duration, frightened of breaking the geas again. As an alternative to enhancing the benefit of spell, this consequence may be chosen to prevent the benefits from being lost when the vow is broken. In such a case, breaking the vow again before a long rest requires another saving throw, with failure causing a repeat of any other consequences as well as the loss of the benefits conferred.",
+						"Darkness - The target suffers from the Blinded condition.",
+						"Lucklessness - The target must reroll any natural 20, keeping the second result.",
+						"Weakness - The target's Strength score becomes 1.",
+						"Pain - The target suffers {@damage 1d10} psychic damage. This consequence can be taken multiple times.",
+						"Death - The target dies. This effect does not end after a night's rest."
+					]
+				},
+				"Abandoning a sacred vow entirely is a complicated and potentially maddening affair. A remove curse, greater restoration, or wish spell can end the spell. The spell does not end from the effects of remove curse or greater restoration unless the target desires so. Alternatively, if you chose to impart your own power to the target, you may end the spell as an action on your turn."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"frightened",
+				"blinded"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"PRM",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Starlight Bombardment",
+			"source": "SF",
+			"page": 0,
+			"rarity": "Rare",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of rock of extraterrestrial origin"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A series of hard light bombs fall from the heavens along a line 60 feet long and 10 feet wide originating and ending from points you choose within range. The spells creates 3 blasts of 10 foot radius spheres each originating in points of your choosing within the line. Each creature within one or more of the spheres must make a Dexterity saving throw. A target takes {@damage 3d8} radiant damage and {@damage 3d4} force damage on a failed save, or half as much on a successful one. A creature within two or more blasts takes an extra {@damage 1d4} force damage (or half on a successful save)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"At higher levels, the spell deals an extra {@scaledamage 3d8|3-9|1d8} radiant damage and creates 1 additional blast sphere for each spell level beyond the 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"force",
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"S",
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Celestial",
+							"source": "XGE",
+							"subSubclass": "Replaces Daylight"
+						}
+					}
+				]
+			}
+		}
+	]
+}]
+}

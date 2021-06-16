@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.130.1",
+	"siteVersion": "1.131.2",
 	"_meta": {
 		"sources": [
 			{
@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1623191629,
-		"dateLastModified": 1623191629
+		"dateAdded": 1623819840,
+		"dateLastModified": 1623819840
 	},
 	"monster": [
 		{
@@ -6302,6 +6302,158 @@
 				"frightened",
 				"restrained"
 			]
+		},
+		{
+			"name": "Flying Camelid",
+			"source": "Starfall",
+			"page": 250,
+			"size": "L",
+			"type": "celestial",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "7d10 + 28",
+				"average": 66
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 18,
+			"int": 10,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"dex": "+3",
+				"wis": "+3",
+				"cha": "+2"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"fire"
+					]
+				},
+				{
+					"resist": [
+						"cold"
+					],
+					"preNote": "or",
+					"note": "(magic coat)"
+				}
+			],
+			"languages": [
+				"understands Celestial",
+				"Common",
+				"and Sylvan but can't speak",
+				"telepathy 30 ft."
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Magic Coat",
+					"entries": [
+						"A flying camelid is able to adapt to new temperatures at a moments notice. As a bonus action, it can magically grow out a thick wooly coat that grants itself resistance to cold damage. While its coat is fully grown, it loses its inborn resistance to fire damage.",
+						"The camelid can magically reabsorb the coat as a bonus action on its turn. If instead the coat is sheared, it cannot magically grow another one for a full week."
+					]
+				},
+				{
+					"name": "Divinity",
+					"entries": [
+						"The flying camelid's melee weapon attacks are intrinsically mythical. It has a Mythic score of 11 ({@hit +1}), and it has a {@hit +3} bonus to Mythic saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Kick",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"desert",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Although winged camelids are not as well-known as their horse counterparts, they are equally a vision of grace and majesty. They tend to entertain only brief sojourns with solid ground, grazing in vibrant arctic meadows, drinking from secluded oases, or lazing on sun-kissed mountain ledges. Any sound or sign of another creature startles them, sending them off to fly once more among the clouds.",
+									{
+										"name": "Enduring Mounts",
+										"type": "entries",
+										"entries": [
+											"Camelids may not be the fastest flying mount, and they can be fickle in their nature. But while a pegasus may seem glorious and superior in a triumphant moment of battle, their morale quickly dampens during prolonged campaigns in hellish conditions. Flying camelids are far better equipped to endure the harsh expeditions often required in the Great Astral War, and as such are not-so-infrequently relied upon."
+										]
+									},
+									{
+										"name": "Adapted to Planar Extremes",
+										"type": "entries",
+										"entries": [
+											"A camel's temperature tolerance is legendary, but flying camelids go even further. Native to the interstice between Tartarus and Nova Celest, they experience rapid and extreme temperature variations between the often scorching land and frigid. They have adapted by developing the ability to magically grow out or reabsorb their coat at a moment's notice."
+										]
+									},
+									{
+										"name": "Versatile Livestock",
+										"type": "entries",
+										"entries": [
+											"While notable for their usage as hardy mounts, flying camelids are prized livestock as well. Their divine constitutions enable them to outproduce most mundane wool-growing creatures, and their milk (and cheese derived from it) is considered a delicacy in many parts of Nova Celest."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/llamapedia/images/8/8e/Winged_llama.jpg/revision/latest?cb=20150103221413"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://ksr-ugc.imgix.net/assets/004/239/127/2365a9614d35678f4ed019d7f857c092_original.png?w=680&fit=max&v=1438350899&auto=format&lossless=true&s=145ff39aa99be3e0c016eb3e71c73d4e",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/pegasus.mp3?v=1.131.2"
+			},
+			"languageTags": [
+				"C",
+				"CE",
+				"CS",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }
