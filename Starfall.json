@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.131.2",
+	"siteVersion": "1.131.6",
 	"_meta": {
 		"sources": [
 			{
@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1623819840,
-		"dateLastModified": 1623819840
+		"dateAdded": 1624888058,
+		"dateLastModified": 1624888058
 	},
 	"monster": [
 		{
@@ -4702,7 +4702,7 @@
 			],
 			"ac": [
 				{
-					"ac": 18,
+					"ac": 20,
 					"from": [
 						"Robe of the Archlich"
 					]
@@ -4824,8 +4824,7 @@
 							"spells": [
 								"{@spell blight}",
 								"{@spell dimension door}",
-								"{@spell polymorph}",
-								"{@spell summon greater demon|XGE}"
+								"{@spell polymorph}"
 							],
 							"slots": 3
 						},
@@ -4840,8 +4839,7 @@
 						"6": {
 							"spells": [
 								"{@spell circle of death}",
-								"{@spell disintegrate}",
-								"{@spell globe of invulnerability}"
+								"{@spell disintegrate}"
 							],
 							"slots": 1
 						},
@@ -4855,6 +4853,7 @@
 						},
 						"8": {
 							"spells": [
+								"{@spell antimagic field}",
 								"{@spell dominate monster}"
 							],
 							"slots": 1
@@ -4956,14 +4955,19 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Vecna regains 10 hit points at the start of his turn if he has at least 1 hit point.",
-						"If Vecna drops to 93 hit points or fewer, his {@spell contingency} goes off, and {@spell negative energy flood|xge} provides him with {@dice 5d12 / 2} temporary hit points."
+						"Vecna regains 10 hit points at the start of his turn if he has at least 1 hit point."
 					]
 				},
 				{
 					"name": "Eldritch Mind",
 					"entries": [
 						"Vecna has advantage on Constitution saving throws to maintain concentration."
+					]
+				},
+				{
+					"name": "Contingency",
+					"entries": [
+						"If Vecna is about to take damage that would drop him to 45 hit points or fewer, his {@spell contingency} goes off and he is enveloped by {@spell Otiluke's Resilient Sphere||Hammurabi's Impenetrable Barrier}"
 					]
 				}
 			],
@@ -6397,7 +6401,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Although winged camelids are not as well-known as their horse counterparts, they are equally a vision of grace and majesty. They tend to entertain only brief sojourns with solid ground, grazing in vibrant arctic meadows, drinking from secluded oases, or lazing on sun-kissed mountain ledges. Any sound or sign of another creature startles them, sending them off to fly once more among the clouds.",
+									"Although winged camelids are not as well-known as their equine counterparts, they are equally a vision of grace and majesty. They tend to entertain only brief sojourns with solid ground, grazing in vibrant arctic meadows, drinking from secluded oases, or lazing on sun-kissed mountain ledges. Any sound or sign of another creature startles them, sending them off to fly once more among the clouds.",
 									{
 										"name": "Enduring Mounts",
 										"type": "entries",
@@ -6409,7 +6413,7 @@
 										"name": "Adapted to Planar Extremes",
 										"type": "entries",
 										"entries": [
-											"A camel's temperature tolerance is legendary, but flying camelids go even further. Native to the interstice between Tartarus and Nova Celest, they experience rapid and extreme temperature variations between the often scorching land and frigid. They have adapted by developing the ability to magically grow out or reabsorb their coat at a moment's notice."
+											"A camel's temperature tolerance is legendary, but flying camelids go even further. Native to the interstice between Tartarus and Nova Celest, they often experience rapid and extreme temperature variations between scorching surfaces and frigid skies. They have adapted by developing the ability to magically grow out or reabsorb their coat at a moment's notice."
 										]
 									},
 									{
@@ -6454,6 +6458,214 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Humpback Whale",
+			"source": "Starfall",
+			"size": "G",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d20 + 24",
+				"average": 150
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 60
+			},
+			"str": 25,
+			"dex": 9,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"acrobatics": "+5"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 11,
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Echolocation",
+					"entries": [
+						"The whale can't use its blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"The whale can hold its breath for 90 minutes."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The whale has advantage on Wisdom (Perception) checks that rely on hearing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}17 ({@damage 3d6 + 7}) bludgeoning damage, or 35 ({@damage 6d6 + 14}) bludgeoning damage if the target is an object."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"The statistics here describe a plankton-feeding whale between 30 and 60 feet long, such as gray, humpback, and right whales. These massive creatures are surprisingly gentle. If harassed or provoked, they are as likely to flee as they are to retaliate. Their natural predators include whalers and fellow leviathans, such as dragon turtles and krakens."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Humpback_stellwagen_edit.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/HvcEQu1.png",
+			"traitTags": [
+				"Hold Breath",
+				"Keen Senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Giant Zombie Shark",
+			"source": "Starfall",
+			"page": 328,
+			"size": "H",
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "11d12 + 55"
+			},
+			"speed": {
+				"swim": 50
+			},
+			"str": 23,
+			"dex": 11,
+			"con": 21,
+			"int": 1,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the giant zombie shark to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the giant zombie shark drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"underwater"
+			],
+			"fluff": {
+				"name": "Giant Shark",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A giant shark is 30 feet long and normally found in deep oceans. Utterly fearless, it preys on anything that crosses its path, including whales and ships."
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Giant Shark.png?v=1.131.6",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-shark.mp3?v=1.131.6"
+			},
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
 		}
 	]
 }
