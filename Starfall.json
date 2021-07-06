@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1625610329,
-		"dateLastModified": 1625610329
+		"dateAdded": 1625610681,
+		"dateLastModified": 1625610681
 	},
 	"monster": [
 		{
@@ -6690,7 +6690,6 @@
 			"wis": 6,
 			"cha": 5,
 			"save": {
-				"con": "+5",
 				"wis": "+0"
 			},
 			"senses": [
@@ -6813,8 +6812,7 @@
 			"wis": 8,
 			"cha": 5,
 			"save": {
-				"wis": "+1",
-				"con": "+5"
+				"wis": "+1"
 			},
 			"senses": [
 				"darkvision 60 ft."
