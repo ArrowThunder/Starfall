@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1625012223,
-		"dateLastModified": 1625012223
+		"dateAdded": 1625610329,
+		"dateLastModified": 1625610329
 	},
 	"monster": [
 		{
@@ -2102,15 +2102,9 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
-					"entries": [
-						"The blightlinked makes two claw attacks. For each of these attacks that reduces a creature to 0 hit points, the blightlinked can make an additional claw attack."
-					]
-				},
-				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage, plus 4 ({@damage 1d8}) necrotic damage."
 					]
 				}
 			],
@@ -2158,14 +2152,12 @@
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"TP"
 			],
 			"damageTags": [
 				"I",
+				"N",
 				"S"
 			],
 			"miscTags": [
@@ -6731,15 +6723,9 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
-					"entries": [
-						"The blighted makes two claw attacks. For each of these attacks that reduces a creature to 0 hit points, the blighted can make an additional claw attack."
-					]
-				},
-				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage, plus 4 ({@damage 1d8}) necrotic damage."
 					]
 				}
 			],
@@ -6787,15 +6773,13 @@
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"CS",
 				"LF"
 			],
 			"damageTags": [
 				"I",
+				"N",
 				"S"
 			],
 			"miscTags": [
@@ -6829,7 +6813,8 @@
 			"wis": 8,
 			"cha": 5,
 			"save": {
-				"wis": "+1"
+				"wis": "+1",
+				"con": "+5"
 			},
 			"senses": [
 				"darkvision 60 ft."
@@ -7180,7 +7165,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The blightling makes two tendril attacks and then punches with its bonefist."
+						"The blightling makes two tendril attacks and then either grabs or drains a target."
 					]
 				},
 				{
@@ -7190,9 +7175,15 @@
 					]
 				},
 				{
-					"name": "Bonefist",
+					"name": "Grab",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage. A target hit by this attack is {@condition grappled} (escape {@dc 16}). While the target is {@condition grappled}, they are also {@condition restrained}."
+					]
+				},
+				{
+					"name": "Drain",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one {@condition grappled} target. {@h}13 ({@damage 2d12}) necrotic damage, plus 7 ({@damage 2d6}) psychic damage. The blightling regains hit points equal to the necrotic damage dealt."
 					]
 				},
 				{
@@ -7203,17 +7194,6 @@
 				}
 			],
 			"fluff": {
-				"name": "Ogre Zombie",
-				"source": "MM",
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Ogre Zombie.jpg"
-						}
-					}
-				],
 				"entries": [
 					{
 						"type": "entries",
@@ -7257,9 +7237,18 @@
 							}
 						]
 					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/ERLW/Dolgaunt.png?v=1.131.6"
+						}
+					}
 				]
 			},
-			"tokenUrl": "https://5e.tools/img/MM/Ogre Zombie.png?v=1.131.6",
+			"tokenUrl": "https://5e.tools/img/ERLW/Dolgaunt.png?v=1.131.6",
 			"soundClip": {
 				"type": "external",
 				"url": "https://5e.tools/audio/bestiary/ogre-zombie.mp3?v=1.131.6"
@@ -7278,7 +7267,9 @@
 			],
 			"damageTags": [
 				"B",
-				"S"
+				"N",
+				"S",
+				"Y"
 			],
 			"miscTags": [
 				"AOE",
@@ -7286,6 +7277,7 @@
 				"RCH"
 			],
 			"conditionInflict": [
+				"grappled",
 				"stunned"
 			],
 			"hasFluff": true,
@@ -7584,6 +7576,154 @@
 			"miscTags": [
 				"AOE"
 			]
+		},
+		{
+			"name": "Blightbeast",
+			"source": "Starfall",
+			"page": 240,
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 68
+			},
+			"speed": {
+				"walk": 35,
+				"climb": 35
+			},
+			"str": 21,
+			"dex": 15,
+			"con": 16,
+			"int": 3,
+			"wis": 7,
+			"cha": 5,
+			"save": {
+				"con": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Blighted",
+					"entries": [
+						"A humanoid slain by the blightbeast by a melee attack rises again as a blighted on its next turn."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the blightbeast to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The blightbeast makes four attacks with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage, plus 9 ({@damage 2d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 5}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Girallon Zombie",
+				"source": "ToA",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Several new zombie variants are presented below. For more information on zombies, see the Monster Manual.",
+											{
+												"name": "Ankylosaurus Zombie",
+												"type": "entries",
+												"entries": [
+													"This creature is slow and barely aware of its surroundings."
+												]
+											},
+											{
+												"name": "Girallon Zombie",
+												"type": "entries",
+												"entries": [
+													"Girallons are four-armed apes with white fur. Girallon zombies are slower than their non-undead counterparts but no less fierce. The necromantic energy empowering them fuels their murderous hearts and their hunger for living flesh."
+												]
+											},
+											{
+												"name": "Tyrannosaurus Zombie",
+												"type": "entries",
+												"entries": [
+													"A tyrannosaurus zombie has a gullet full of smaller zombies, which it can disgorge. These zombies aren't under the tyrannosaurus zombie's control."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/ToA/Girallon Zombie.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/ToA/Girallon Zombie.png?v=1.131.6",
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }
