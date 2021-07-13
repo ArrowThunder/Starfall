@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1626210056,
-		"dateLastModified": 1626210056
+		"dateAdded": 1626212451,
+		"dateLastModified": 1626212451
 	},
 	"monster": [
 		{
@@ -6728,22 +6728,6 @@
 					]
 				}
 			],
-			"variant": [
-				{
-					"name": "Blighted Bursters",
-					"entries": [
-						"Some blighted become bloated with disease and bile, their frenzied state pushing them to rush other living creatures, explode, and spread their horrid infection. A blighted burster has the following additional action option:",
-						{
-							"type": "entries",
-							"name": "Burst",
-							"entries": [
-								"The blighted explodes and is destroyed. Each creature within 5 feet of it must make a {@dc 12} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one. A humanoid creature killed by this damage rises as a blighted on its next turn."
-							]
-						}
-					],
-					"type": "variant"
-				}
-			],
 			"fluff": {
 				"name": "Husk Zombie",
 				"source": "EGW",
@@ -6777,7 +6761,6 @@
 				"LF"
 			],
 			"damageTags": [
-				"I",
 				"N",
 				"S"
 			],
@@ -7727,6 +7710,120 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Blighted Burster",
+			"shortName": "Blighted",
+			"source": "Starfall",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "3d8 + 9",
+				"average": 22
+			},
+			"speed": {
+				"walk": 35,
+				"climb": {
+					"number": 30,
+					"condition": "on blighted terrain"
+				}
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"save": {
+				"wis": "+0"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Blighted",
+					"entries": [
+						"A humanoid slain by the blighted by a melee attack rises again as a blighted on its next turn."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the blighted to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the blighted drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Burst",
+					"entries": [
+						"The blighted explodes and is destroyed. Each creature within 10 feet of it must make a {@dc 12} Constitution saving throw, taking 21 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a successful one. A humanoid creature killed by this damage rises as a blighted on its next turn."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"The wastes of Eastern Wynandir retain many curses and corruptions from the time of the Calamity, the worst of which pervert the sanctity of death. One such curse manifests as a terrible roving fog that draws the corpses of the fallen to rise as husk zombies—resilient undead of frightening speed and bloodlust. As well, some of the more heinous fiends that walk these scarred lands feed on the life force of the living, leaving these terrible undead in their wake."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/IXC4Kq0.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/jDUQ0FI.png",
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
 		}
 	]
 }
