@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.131.6",
+	"siteVersion": "1.132.0",
 	"_meta": {
 		"sources": [
 			{
@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1625610681,
-		"dateLastModified": 1625610681
+		"dateAdded": 1626210056,
+		"dateLastModified": 1626210056
 	},
 	"monster": [
 		{
@@ -6943,23 +6943,28 @@
 				"E"
 			],
 			"ac": [
+				20,
 				{
 					"ac": 15,
-					"from": [
-						"natural armor"
-					]
+					"condition": "natural armor",
+					"braces": true
+				},
+				{
+					"ac": 5,
+					"condition": "reactive layers",
+					"braces": true
 				}
 			],
 			"hp": {
-				"formula": "9d10 + 63",
-				"average": 112
+				"formula": "8d10 + 40",
+				"average": 84
 			},
 			"speed": {
 				"walk": 35
 			},
-			"str": 21,
+			"str": 22,
 			"dex": 10,
-			"con": 24,
+			"con": 20,
 			"int": 8,
 			"wis": 11,
 			"cha": 7,
@@ -6993,34 +6998,24 @@
 					"entries": [
 						"If damage reduces the blightshell to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the blightshell drops to 1 hit point instead."
 					]
+				},
+				{
+					"name": "Reactive Armor",
+					"entries": [
+						"The blightshell's armor has 5 reactive layers of exoskeletal plating attached by volatile sacs of infected tissue, each providing a +1 bonus to its AC. Each time an attack roll misses the blightshell because of one of these layers, roll damage anyway. If the damage is 5 or less, nothing happens. Otherwise, the outermost layer of the blightshell's armor explodes. Up to two extra layers may simultaneously explode, at damage rolls more than 15 and 35 respectively. The blightshell takes half the damage rolled after reducing it by 5 for each layer that explodes.",
+						"When the armor explodes, everything in a 10-foot radius must make a {@dc 15} Dexterity saving throw, taking {@damage 2d6} piercing damage for each layer activated. On a successful save, a creature takes half damage. A creature grappling or {@condition grappled} by the blightshell automatically fails its save."
+					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "Slam",
 					"entries": [
-						"The blightshell makes two bonefist attacks."
-					]
-				},
-				{
-					"name": "Bonefist",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage, and the creature must make a {@dc 14} Strength save or be knocked {@condition prone}."
 					]
 				}
 			],
 			"fluff": {
-				"name": "Ogre Zombie",
-				"source": "MM",
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Ogre Zombie.jpg"
-						}
-					}
-				],
 				"entries": [
 					{
 						"type": "entries",
@@ -7064,9 +7059,18 @@
 							}
 						]
 					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ni01EW3.jpg"
+						}
+					}
 				]
 			},
-			"tokenUrl": "https://5e.tools/img/MM/Ogre Zombie.png?v=1.131.6",
+			"tokenUrl": "https://i.imgur.com/Qo7voje.png",
 			"soundClip": {
 				"type": "external",
 				"url": "https://5e.tools/audio/bestiary/ogre-zombie.mp3?v=1.131.6"
@@ -7077,9 +7081,6 @@
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
 				"CS",
@@ -7089,7 +7090,11 @@
 				"B"
 			],
 			"miscTags": [
+				"AOE",
 				"MW"
+			],
+			"conditionInflict": [
+				"prone"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
