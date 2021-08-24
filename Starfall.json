@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1629241352,
-		"dateLastModified": 1629241352
+		"dateAdded": 1629844829,
+		"dateLastModified": 1629844829
 	},
 	"monster": [
 		{
@@ -8332,6 +8332,7 @@
 				"Illithid Arcanist"
 			],
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "Starfall",
 			"page": 250,
 			"size": "M",
@@ -8344,8 +8345,8 @@
 				19
 			],
 			"hp": {
-				"formula": "20d8 + 80",
-				"average": 170
+				"formula": "20d8 + 80 + 24",
+				"average": 194
 			},
 			"speed": {
 				"walk": 30,
@@ -8356,7 +8357,7 @@
 				"canHover": true,
 				"swim": 30
 			},
-			"str": 11,
+			"str": 12,
 			"dex": 23,
 			"con": 18,
 			"int": 19,
@@ -8397,14 +8398,14 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Vecna is a 14th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 21}, +13 to hit with spell attacks). She knows the following spells:"
+						"Vecna is a 14th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 21}, +13 to hit with spell attacks). She knows the following spells, and can cast them without somatic or verbal components:"
 					],
 					"spells": {
 						"0": {
 							"spells": [
 								"{@spell booming blade|TCE}",
 								"{@spell chill touch}",
-								"{@spell green-flame blade|TCE}",
+								"{@spell green-flame blade|TCE} (cold damage)",
 								"{@spell mage hand}",
 								"{@spell message}",
 								"{@spell mind sliver|TCE}",
@@ -8465,7 +8466,151 @@
 					"type": "spellcasting"
 				}
 			],
+			"trait": [
+				{
+					"name": "Mythic Power.",
+					"entries": [
+						"Eileen is a 6th-tier Dynast-destiny Mythic hero. She has 13 surges she can spend each week, and her surge dice are {@dice d8}s. Her Mythic Score is 16 ({@hit +3}), and she has a {@hit +8} to Mythic saving throws."
+					]
+				},
+				{
+					"name": "Mythic Reduction",
+					"entries": [
+						"Eileen has 6 mythic damage reduction."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Eileen has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Eileen can breathe air and water."
+					]
+				},
+				{
+					"name": "War Caster",
+					"entries": [
+						"Eileen has advantage on Constitution saving throws made to maintain concentration. Additionally, she can cast booming blade or blue-flame blade when she may make an opportunity attack."
+					]
+				},
+				{
+					"name": "Mythic Versatility",
+					"entries": [
+						"Built into her stats, Eileen's ability scores are raised by 3. She adds 3 to his initiative rolls, giving her {@hit +8} to her initiative rolls."
+					]
+				},
+				{
+					"name": "Unsettling Aura",
+					"entries": [
+						"Any humanoid that starts its turn within 30 feet of Eileen and can see her must make a {@dc 16} Wisdom saving throw. On a failed save, the creature is {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if Eileen is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Eileen's Unsettling Aura for the next 24 hours.",
+						"Unless the target is surprised or the revelation of the Eileen's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the Eileen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quill of the Depths",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}15 ({@damage 1d8 + 1d4 + 8}) piercing damage, plus 22 ({@damage 5d8}) psychic damage. On hit, causes an extra effect depending on the {@dice d4} rolled (see Inkwhip)."
+					]
+				},
+				{
+					"name": "Blue-Flame Blade",
+					"entries": [
+						"Eileen makes one attack with her Quill of the Depths. On hit, she deals an extra 9 ({@damage 2d8}) cold damage, and a creature within 5 feet of her target (other than her target) takes 17 ({@damage 2d8 + 8}) cold damage."
+					]
+				},
+				{
+					"name": "Booming Blade",
+					"entries": [
+						"Eileen makes one attack with her Quill of the Depths. On hit, she deals an extra 9 ({@damage 2d8}) thunder damage, and if the target willingly moves more than 5 feet before the start of her next turn, it takes an additional 13 ({@damage 3d8}) thunder damage."
+					]
+				},
+				{
+					"name": "Inkwhip",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d4 + 8}) slashing damage. On hit, causes an extra effect depending on the {@dice d4} rolled.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "1. Ink Dip.",
+									"style": "italic",
+									"entry": "The target creature takes an additional 9 ({@damage 2d8}) necrotic damage, and Eileen heals for that amount. The target cannot regain hit points until the start of Eileen's next turn."
+								},
+								{
+									"type": "item",
+									"name": "2. Restraining Order.",
+									"style": "italic",
+									"entry": "The target must make a {@dc 18} Strength saving throw. On a failed save, the target is {@condition restrained} until the end of their next turn."
+								},
+								{
+									"type": "item",
+									"name": "3. Contractual Bond.",
+									"style": "italic",
+									"entry": "The target must make an Intelligence saving throw ({@dc 18}) or be {@condition charmed} for 1 minute. The creature may make the save again if the target is damaged by Eileen."
+								},
+								{
+									"type": "item",
+									"name": "4. Ink World.",
+									"style": "italic",
+									"entry": "The target must make a Dexterity saving throw ({@dc 18}) or be {@condition blinded} and {@condition deafened} for 1 minute. The effect ends early if the target or an ally uses an action to scrape the ink off their face."
+								}
+							]
+						}
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Gaze of the Deep",
+					"entries": [
+						"Eileen chooses one creature with an intelligence score of 4 or higher that she can see and which can see her. That creature must make a {@dc 21} Wisdom saving throw or be {@condition frightened} of Eileen until the start of her next turn. Eileen has advantage on attack rolls against any creatures {@condition frightened} in this way."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Inkwhip (Costs 1 action)",
+					"entries": [
+						"Eileen lashes out with her inkwhip."
+					]
+				},
+				{
+					"name": "Stab (Costs 2 actions)",
+					"entries": [
+						"Eileen stabs a target with her Quill of the Depths."
+					]
+				},
+				{
+					"name": "Captain's Barrage (Costs 3 actions)",
+					"entries": [
+						"Eileen magically coordinates artillery fire across space centered on a point within 120 feet of her. Each creature in a 30-foot radius, 20-foot tall cylinder centered on that point must make a Dexterity saving throw ({@dc 21}). A creature takes 22 ({@damage 4d10}) bludgeoning damage on a failed save, or half as much on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/744014436213194793/746258110733221999/eileencolored.png"
+						}
+					}
+				]
+			},
 			"tokenUrl": "https://5e.tools/img/WDMM/Captain N'ghathrod.png?v=1.134.0",
+			"traitTags": [
+				"Amphibious",
+				"Magic Resistance"
+			],
 			"senseTags": [
 				"SD"
 			],
@@ -8476,7 +8621,25 @@
 				"U"
 			],
 			"damageTags": [
+				"B",
+				"C",
+				"N",
+				"P",
+				"S",
+				"T",
 				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"restrained"
 			],
 			"conditionInflictSpell": [
 				"charmed",
