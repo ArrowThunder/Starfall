@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.134.0",
+	"siteVersion": "1.131.2",
 	"_meta": {
 		"sources": [
 			{
@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1629844829,
-		"dateLastModified": 1629844829
+		"dateAdded": 1635287573,
+		"dateLastModified": 1635287573
 	},
 	"monster": [
 		{
@@ -2162,339 +2162,6 @@
 			],
 			"miscTags": [
 				"MW"
-			]
-		},
-		{
-			"name": "Proto-Blightmind",
-			"shortName": "Blightmind",
-			"source": "Starfall",
-			"size": "H",
-			"type": "undead",
-			"alignment": [
-				{
-					"special": "Void Anarchic Collectivist"
-				}
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "23d12 + 138",
-				"average": 287
-			},
-			"speed": {
-				"walk": 20,
-				"burrow": 10,
-				"climb": 20
-			},
-			"str": 22,
-			"dex": 12,
-			"con": 22,
-			"int": 21,
-			"wis": 19,
-			"cha": 24,
-			"save": {
-				"int": "+11",
-				"wis": "+10",
-				"cha": "+13"
-			},
-			"skill": {
-				"arcana": "+11",
-				"deception": "+13",
-				"insight": "+16",
-				"intimidation": "+13",
-				"persuasion": "+13",
-				"history": "+17",
-				"investigation": "+11",
-				"medicine": "+10",
-				"nature": "+11",
-				"religion": "+11",
-				"perception": "+16"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 26,
-			"resist": [
-				"necrotic",
-				"psychic"
-			],
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"blinded",
-				"deafened",
-				"poisoned",
-				"prone",
-				"unconscious"
-			],
-			"languages": [
-				"understands Common",
-				"Deep Speech",
-				"and Undercommon but can't speak",
-				"telepathy 5 miles"
-			],
-			"cr": "17",
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting (Psionics)",
-					"headerEntries": [
-						"The elder brain's innate spellcasting ability is Intelligence (spell save {@dc 19}). It can innately cast the following spells, requiring no components:"
-					],
-					"will": [
-						"{@spell blight}",
-						"{@spell detect thoughts}",
-						"{@spell levitate}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell dominate monster}",
-							"{@spell mass suggestion}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Creature Sense",
-					"entries": [
-						"The blightmind is aware of the presence of creatures within 5 miles of it that have an Intelligence score of 4 or higher. It knows the distance and direction to each creature, as well as each one's intelligence score, but can't sense anything else about it. A creature protected by a {@spell mind blank} spell, a {@spell nondetection} spell, or similar magic can't be perceived in this manner."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the blightmind fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The blightmind has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Telepathic Hub",
-					"entries": [
-						"The blightmind can use its telepathy to initiate and maintain telepathic conversations with up to ten creatures at a time. The elder brain can let those creatures telepathically hear each other while connected in this way."
-					]
-				},
-				{
-					"name": "Blighted",
-					"entries": [
-						"Any eligible creature which dies in the presence of the blightmind rises again as a mindlinked blighted."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Tentacle",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 30 ft., one target. {@h}21 ({@damage 4d8 + 3}) bludgeoning damage. If the target is a Huge or smaller creature, it is {@condition grappled} (escape {@dc 16}) and takes 10 ({@damage 1d8 + 6}) psychic damage at the start of each of its turns until the grapple ends. The blightmind can have up to eight targets {@condition grappled} at a time."
-					]
-				},
-				{
-					"name": "Mind Blast {@recharge 5}",
-					"entries": [
-						"The blightmind magically emits psychic energy. Creatures of the blightmind's choice within 60 feet of it must succeed on a {@dc 19} Intelligence saving throw or take 39 ({@damage 6d10 + 6}) psychic damage and be {@condition stunned} for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				},
-				{
-					"name": "Spew Bile {@recharge 5}",
-					"entries": [
-						"The blightmind vomits in a 60-foot cone. Each creature in the cone must make a {@dc 20} Constitution saving throw and take {@damage 8d6 + 6} necrotic damage and be {@condition poisoned} for 1 minute. With a successful save, a creature takes half damage and is not {@condition poisoned}. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Harden",
-					"entries": [
-						"When the blightmind would take damage, it gains resistance to bludgeoning, radiant, slashing, and piercing damage until the end of the current turn."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Tentacle",
-					"entries": [
-						"The blightmind makes a tentacle attack."
-					]
-				},
-				{
-					"name": "React",
-					"entries": [
-						"The blightmind regains its reaction."
-					]
-				}
-			],
-			"legendaryGroup": {
-				"name": "Orcus",
-				"source": "MTF"
-			},
-			"environment": [
-				"underdark"
-			],
-			"fluff": {
-				"name": "Elder Brain",
-				"source": "VGM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"The ultimate expression of illithid domination, an elder brain sprawls within a vat of viscous brine, touching the thoughts of creatures near and far. It scrawls upon the canvas of their minds, rewriting their thoughts and authoring their dreams.",
-											{
-												"name": "Psychic Infiltrators",
-												"entries": [
-													" When an elder brain infiltrates a mind, it alters the creature's perception and deceives its senses, causing it to see, hear, touch, taste, or feel reality according to the elder brain's intent. From across great distances, it implants subconscious suggestions or subtly influences dreams to compel creatures toward a course of action that benefits its grand plan.",
-													"When its insidious suggestions fail to take hold, an elder brain asserts its dominance more directly. It seizes control of a resistant mind and controls the creature's body as it would a puppet. Against the rare, strong-willed stalwart that defies it or attacks it, an elder brain sends a blast of overwhelming psychic force to crush the upstart's mind, rendering the creature a thoughtless, drooling shell.",
-													"When a mind flayer perishes, the elder brain's servants feed the contents of its skull to their master, which absorbs the illithid's brain and all the knowledge and experience contained therein. In this way the elder brain continually increases its knowledge, uniting the thoughts and experiences of the illithid colony into a unified whole. Mind flayers conceive of this \"oneness\" as a sacred state in the same way that a worshiper of a human deity might view an eternal afterlife in the heavens-for an elder brain can evoke the persona of any illithid it has ever absorbed.",
-													"The ambitions of an elder brain are always tempered by its relative immobility. Although its telepathic senses can reach for miles, moving anywhere is always a dangerous proposition. If forced outside its brine pool, an elder brain will swiftly expire, and transporting an elder brain in its pool through confining and tortuous subterranean tunnels frequently proves difficult or impossible."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Devourer of Thoughts",
-												"entries": [
-													" An elder brain sustains itself by consuming the brains of other creatures. When the mind flayer servants that guard and tend to an elder brain don't bring its meals directly to it, the elder brain reaches out with tendrils of thought, mentally compelling creatures to come to it so that it may feed upon them."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Hive Mind",
-												"entries": [
-													" Non-illithids call this creature an elder brain because it acts as the central communication hub for an entire mind flayer colony just as a brain does for a living body. Linked to the elder brain, the colony acts like a single organism, acting in concert as if each illithid were the digit of a hand."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Ego Unhindered",
-												"entries": [
-													" Each elder brain considers itself and its desires the most important things in the multiverse, the mind flayers in its colony nothing more than extensions of its will. But no two elder brains are alike, and each presides over its colony according to its own unique personality and storehouse of collected knowledge and experience. Some elder brains reign as domineering tyrants, while others serve more benignly as sages, counselors, and repositories of information and lore for the mind flayers that protect and nourish them."
-												],
-												"type": "entries"
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "An Elder Brain's Lair",
-										"entries": [
-											"The lair of an elder brain always lies deep in the heart of a mind flayer colony. The creature dwells in a dimly glowing brine pool, filled with foul and brackish water infused with the elder brain's vital fluids and with psionic energy."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Lair Actions",
-								"entries": [
-									"When fighting inside its lair, an elder brain can use lair actions. On initiative count 20 (losing initiative ties), an elder brain can take one lair action to cause one of the following effects; the elder brain can't use the same lair action two rounds in a row:",
-									{
-										"type": "list",
-										"items": [
-											"The elder brain casts {@spell wall of force}.",
-											"The elder brain targets one friendly creature it can sense within 120 feet of it. The target has a flash of inspiration and gains advantage on one attack roll, ability check, or saving throw it makes before the end of its next turn. If the target doesn't or can't use this benefit in that time, the inspiration is lost.",
-											"The elder brain targets one creature it can sense within 120 feet of it and anchors it by sheer force of will. The target must succeed on a {@dc 18} Charisma saving throw or be unable to leave its current space. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Regional Effects",
-								"entries": [
-									"The territory within 5 miles of an elder brain is altered by the creature's psionic presence, which creates one or more of the following effects:",
-									{
-										"type": "list",
-										"items": [
-											"Creatures within 5 miles of an elder brain feel as if they are being followed, even when they are not.",
-											"The elder brain can overhear any telepathic conversation happening within 5 miles of it. The creature that initiated the telepathic conversation makes a {@dc 18} Wisdom ({@skill Insight}) check when telepathic contact is first established. If the check succeeds, the creature is aware that something is eavesdropping on the conversation. The nature of the eavesdropper isn't revealed, and the elder brain can't participate in the telepathic conversation unless it has formed a psychic link with the creature that initiated it.",
-											"Any creature with which the elder brain has formed a psychic link hears faint, incomprehensible whispers in the deepest recesses of its mind. This psychic detritus consists of the elder brain's stray thoughts commingled with those of other creatures to which it is linked."
-										]
-									},
-									"If the elder brain dies, these effects immediately end."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/VGM/Elder Brain.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/VGM/Elder Brain.png?v=1.120.1",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/elder-brain.mp3?v=1.120.1"
-			},
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Tentacles"
-			],
-			"languageTags": [
-				"C",
-				"CS",
-				"DS",
-				"TP",
-				"U"
-			],
-			"damageTags": [
-				"B",
-				"Y"
-			],
-			"spellcastingTags": [
-				"I",
-				"P"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"grappled",
-				"poisoned",
-				"stunned"
-			],
-			"conditionInflictSpell": [
-				"charmed"
 			]
 		},
 		{
@@ -6071,235 +5738,6 @@
 			]
 		},
 		{
-			"name": "Fathomless, the Insatiable Eterntiy",
-			"shortName": "Fathomless",
-			"source": "Starfall",
-			"size": "G",
-			"type": "aberration",
-			"alignment": [
-				{
-					"special": "anarchist privatist astralist"
-				}
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "21d20 + 231",
-				"average": 451
-			},
-			"speed": {
-				"walk": 40,
-				"fly": {
-					"number": 20,
-					"condition": "(hover)"
-				},
-				"canHover": true,
-				"swim": 80
-			},
-			"str": 27,
-			"dex": 12,
-			"con": 33,
-			"int": 25,
-			"wis": 21,
-			"cha": 18,
-			"save": {
-				"int": "+14",
-				"wis": "+12",
-				"dex": "+8",
-				"str": "+15"
-			},
-			"skill": {
-				"arcana": "+21",
-				"history": "+14",
-				"perception": "+12"
-			},
-			"senses": [
-				"blindsight 120 ft.",
-				"truesight 60 ft."
-			],
-			"passive": 22,
-			"resist": [
-				"acid",
-				"bludgeoning",
-				"cold",
-				"necrotic",
-				"poison"
-			],
-			"immune": [
-				{
-					"immune": [
-						"fire",
-						"thunder"
-					]
-				},
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks"
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"prone",
-				"restrained",
-				"stunned",
-				"unconscious"
-			],
-			"languages": [
-				"all",
-				"telepathy 1 mile"
-			],
-			"cr": "21",
-			"trait": [
-				{
-					"name": "Demiplanar Donjon",
-					"entries": [
-						"Any creature or object that the fathomless swallows is transported to a demiplane that can be entered by no other means except a wish spell or this creature's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1,000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of the fathomless past meals.",
-						"The fathomless can't be harmed from within the demiplane. If the fathomless dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible."
-					]
-				},
-				{
-					"name": "Mythical",
-					"entries": [
-						"Although the fathomless lacks a mythic tier, its very existence is the stuff of legends. Its attacks are considered magical and mythical."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the fathomless fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"The fathomless deals double damage to objects and structures."
-					]
-				},
-				{
-					"name": "One with the Sea",
-					"entries": [
-						"The fathomless can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing. Its attacks can reach anywhere that its abilities make difficult terrain."
-					]
-				},
-				{
-					"name": "Unusual Nature",
-					"entries": [
-						"The fathomless doesn't require air, food, drink, or sleep."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The fathomless makes three tentacle attacks."
-					]
-				},
-				{
-					"name": "Tentacle Slam",
-					"entries": [
-						"{@atk mw} {@hit 15} to hit, reach 30 ft., one target. {@h}14 ({@damage 1d12 + 8}) bludgeoning damage, and the target is moved 10 feet in a direction of the fathomless's choosing."
-					]
-				},
-				{
-					"name": "Devour",
-					"entries": [
-						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target {@condition frightened} of the fathomless. {@h}20 ({@damage 8d4 + 8}) slashing damage, plus 26 ({@damage 4d12}) psychic damage. The target must make a {@dc 21} Charisma saving throw or be transported to the fathomless's demiplanar donjon."
-					]
-				},
-				{
-					"name": "Maestrom-Maw (Recharge 6) 53 damage/budget",
-					"entries": [
-						"While submerged in at least 250 feet of water, the fathomless magically creates a terrible whirlpool pulling deep into the abyss, centered on itself. The maelstrom is from 20 to 100 feet wide at the base, and up to 1000 feet wide at the top, with a depth of up to 250 feet. The maelstrom is difficult terrain. A cylindrical vortex stretches from the base of the maelstrom to a depth of up to five times the width of the top of the maelstrom.",
-						"When the maelstrom is formed, and again at the start of each of the fathomless's turns, each creature in the water and within 500 feet of the maelstrom must make a {@dc 24} Strength saving throw. A creature moves 100 feet closer to vortex, or half as far on a successful save. A creature can swim away from the vortex by succeeding on a {@dc 24} Strength (Athletics) check.",
-						"When a creature enters the maelstrom for the first time on a turn or ends its turn there, it must make a {@dc 24} Strength saving throw. A creature takes 22 ({@damage 5d8}) bludgeoning damage, 14 ({@damage 4d6}) piercing damage, or half damage on a successful save.",
-						"When a creature enters the vortex for the first time on its turn or starts its turn there is immediately moved 250 feet downwards and makes a {@dc 21} Dexterity save. On a failed save, the creature takes 35 ({@damage 10d6}) bludgeoning damage and 18 ({@damage 4d8}) acid damage, and is {@condition restrained} until the start of their next turn. On a successful save, the creature takes half damage and is ejected from the vortex.",
-						"At the start of the fathomless's turn, the depth of the maelstrom decreases by 50 feet (minimum 10 feet), and the width of the top of the maelstrom decreases by 100 feet. For every 100 feet the maelstrom has contracted horizontally, its bludgeoning damage decreases by {@dice 1d8} and the vortex's bludgeoning damage decreases by {@dice 2d6}. Once the maelstrom has a top width equal to twice the width of the base, the whirlpool subsides entirely."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Tentacle",
-					"entries": [
-						"The fathomless makes one attack with its tentacles."
-					]
-				},
-				{
-					"name": "Consumptive Despair",
-					"entries": [
-						"The fathomless chooses one creature within the wall of its tsunami-maw or within the maelstrom of its maelstrom-maw. That creature must make a {@dc 22} Intelligence save as it glimpses eternity. On a failed save, a creature takes 13 ({@damage 2d12}) psychic damage and is {@condition frightened} for 1 minute. While {@condition frightened} in this way, a creature is {@condition blinded} and {@condition deafened} to its surroundings. A {@condition frightened} creature can repeat the save at the end of each of its turns. If a target's saving throw is successful or the effect ends for it, the target is immune to consumptive despair for the next 24 hours."
-					]
-				}
-			],
-			"variant": [
-				{
-					"name": "Near Shore",
-					"entries": [
-						"The fathomless occasionally has reason to appear nearer to shore than it might have otherwise. In such a case, it gains the following action:"
-					],
-					"type": "variant"
-				}
-			],
-			"environment": [
-				"coastal",
-				"underwater"
-			],
-			"fluff": {
-				"entries": [
-					"The fathomless is just the physical manifestation of a far less corporeal, primordial, conceptual entity. The Fathomless is the living entity embodying the endless void, and the bottomless despair that accompanies it.",
-					"Defeating the fathomless does not permanently ensure its demise, but rather causes it to retreat from its mortal coil for the time being."
-				]
-			},
-			"traitTags": [
-				"Legendary Resistances",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B",
-				"U"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"TP",
-				"XX"
-			],
-			"damageTags": [
-				"A",
-				"B",
-				"P",
-				"S",
-				"Y"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"blinded",
-				"deafened",
-				"frightened",
-				"restrained"
-			]
-		},
-		{
 			"name": "Flying Camelid",
 			"source": "Starfall",
 			"page": 250,
@@ -8374,7 +7812,8 @@
 				"insight": "+8",
 				"perception": "+8",
 				"persuasion": "+13",
-				"stealth": "+11"
+				"stealth": "+11",
+				"investigation": "+9"
 			},
 			"senses": [
 				"darkvision 120 ft."
@@ -8647,6 +8086,192 @@
 				"restrained",
 				"unconscious"
 			]
+		},
+		{
+			"name": "World Eater",
+			"source": "Starfall",
+			"page": 40,
+			"size": "H",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d10 + 125",
+				"average": 262
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 25,
+			"dex": 13,
+			"con": 21,
+			"int": 5,
+			"wis": 18,
+			"cha": 9,
+			"save": {
+				"str": "+13",
+				"con": "+11",
+				"dex": "+7"
+			},
+			"skill": {
+				"perception": "+16"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 26,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands Deep Speech but can't speak"
+			],
+			"cr": "18",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The world eater can breathe air and water."
+					]
+				},
+				{
+					"name": "Sense Magic",
+					"entries": [
+						"The world eater senses magic within 120 feet of it at will. This trait otherwise works like the detect magic spell but isn't itself magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The world eater makes two pincer attacks and a bite attack. If the world eater is grappling a creature, the world eater can also use its tentacles once. If the world eater starts its turn grappling a creature, it may replace that pincer attack with a crush."
+					]
+				},
+				{
+					"name": "Pincer",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage. The target is {@condition grappled} (escape {@dc 21}) if the world eater doesn't have two other creatures {@condition grappled}."
+					]
+				},
+				{
+					"name": "Tentacles",
+					"entries": [
+						"One creature {@condition grappled} by the world eater must succeed on a {@dc 19} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Crush",
+					"entries": [
+						"One creature {@condition grappled} by the World Eater must succeed on a {@dc 21} Constitution saving throw. The creature takes 25 (4d8+7) bludgeoning damage on a failed save, or half as much on a successful one."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}23 ({@damage 3d10 + 7}) piercing damage. If the target is {@condition grappled} by the world eater, this attack has advantage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Chuul",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Survivors of the ancient aboleth empire, chuuls are crustaceans the aboleths modified and endowed with sentience. They follow the ingrained directives of their creators, as they have done since the dawn of time.",
+									{
+										"name": "Primeval Relics",
+										"type": "entries",
+										"entries": [
+											"In the primeval ages, aboleths ruled a vast empire that spanned the oceans of the world. In those days, the aboleths used mighty magic and bent the minds of the nascent creatures of the mortal realm. However, they were bound to the water and could not enforce their will beyond it without servants. Therefore, they created chuuls.",
+											"Perfectly obedient, the chuuls collected sentient creatures and magic at the aboleths' command. Chuuls were designed to endure the ages of the world, growing in size and strength as the eons passed. When the aboleths' empire crumbled with the rise of the gods, the chuuls were cast adrift. However, these creatures continue to do what they did for the aboleths, slowly collecting humanoids, gathering treasure, amassing magic, and consolidating power."
+										]
+									},
+									{
+										"name": "Tireless Guardians",
+										"type": "entries",
+										"entries": [
+											"Chuul still guard the ruins of the ancient aboleth empire. They linger in silent observance of eons-old commands. Rumors and ancient maps sometimes lure treasure seekers to these ruins, but the reward for their boldness is death.",
+											"Whatever riches that the explorers bring with them adds to the hoard guarded by the chuuls. Chuuls can sense magic at a distance. This sense couples with an innate drive that leads them to slay explorers, take their gear, and bury it in secret locales aboleths dictated eons ago."
+										]
+									},
+									{
+										"name": "Waiting Servants",
+										"type": "entries",
+										"entries": [
+											"Although the aboleths' ancient empire fell long ago, the psychic bonds between them and their created servants remain intact. Chuuls that come into contact with aboleths immediately assume their old roles. Such chuuls redirect their compulsions to the service of the aboleths' sinister purposes."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Chuul.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://thegiddylimit.github.io/img/MM/Chuul.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://thegiddylimit.github.io/audio/bestiary/chuul.mp3"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"CS",
+				"DS"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"paralyzed",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }
